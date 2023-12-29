@@ -2,6 +2,8 @@
 
 Телеграмм бот для преобразования видео в аудио.
 
+Bot URL - https://web.telegram.org/a/#6599542453
+
 ![example1](example/first1.png)
 ![example2](example/second2.png)
 
