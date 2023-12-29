@@ -2,8 +2,8 @@
 
 Телеграмм бот для преобразования видео в аудио.
 
-![example1](example/first.png)
-![example2](example/second.png)
+![example1](example/first1.png)
+![example2](example/second2.png)
 
 **Основные функции**:
 1. Преобразование ролика из ютуб в аудио дорожку
