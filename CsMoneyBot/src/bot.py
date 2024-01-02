@@ -6,7 +6,6 @@ from aiogram import Bot, Dispatcher, F, types
 from aiogram.enums import ParseMode
 from aiogram.filters.command import Command
 from data.config import config
-from data.data import FloatSettingsInfo, StickerSettingsInfo
 
 # data
 from data.telegram_data import Buttons, Descriptions, Keyboards
@@ -16,11 +15,9 @@ from database.connection import initialize_database
 
 # dotenv
 from dotenv import load_dotenv
-from models.floats import FloatSettings
-from models.stickers import StickerSettings
 
 # service
-from service.service import SettingsWorker, UserWorker
+from service.service import FloatWorker, StickerWorker, UserWorker
 
 load_dotenv()
 
@@ -37,8 +34,8 @@ dp = Dispatcher()
 
 # workers
 user_worker = UserWorker()
-float_worker = SettingsWorker(model=FloatSettings, data_show=FloatSettingsInfo)
-sticker_worker = SettingsWorker(model=StickerSettings, data_show=StickerSettingsInfo)
+float_worker = FloatWorker()
+sticker_worker = StickerWorker()
 
 
 @dp.message(Command("start"))
@@ -52,24 +49,25 @@ async def best_offers(message: types.Message):
     await message.answer("Лучшие предложения")
 
 
-@dp.message(F.text.lower() == "📊 настройки float 📊")
+@dp.message(F.text.lower() == "📊 настройки float")
 async def float_settings(message: types.Message):
-    float_settings = await float_worker.get_settings_info(message)
-    print(float_settings)
-    await message.answer("Настройки float")
+    keyboard = keyboards.get_setting_keyboard("floats")
+    float_string = await Descriptions.get_settings_description(message, "floats")
+    await message.answer(float_string, reply_markup=keyboard)
 
 
-@dp.message(F.text.lower() == "🀄️ настройки sticker 🀄️")
+@dp.message(F.text.lower() == "настройки sticker 🀄️")
 async def sticker_settings(message: types.Message):
-    sticker_settongs = await sticker_worker.get_settings_info(message)
-    print(sticker_settongs)
-    await message.answer("Настройки sticker")
+    keyboard = keyboards.get_setting_keyboard("sticker")
+    sticker_string = await Descriptions.get_settings_description(message, "sticker")
+    await message.answer(sticker_string, reply_markup=keyboard)
 
 
 @dp.message(F.text.lower() == "🚹️ профиль 🚹️")
 async def profile(message: types.Message):
-    user_info = await user_worker.get_user_info(message)
-    await message.answer(f"{user_info.user_id}: {user_info.username}")
+    keyboard = keyboards.profileKeyboard
+    profile_string = await Descriptions.get_user_description(message)
+    await message.answer(profile_string, reply_markup=keyboard)
 
 
 async def main():
