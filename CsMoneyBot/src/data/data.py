@@ -6,6 +6,8 @@ from typing import List
 class UserInfo:
     user_id: int
     username: str
+    send_stickers: bool
+    send_float: bool
 
 
 @dataclass

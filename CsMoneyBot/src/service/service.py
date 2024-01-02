@@ -10,27 +10,31 @@ from models.users import User
 class UserWorker:
     user_crud = Database(User)
 
-    async def create_user(self, message: types.Message) -> None:
+    @classmethod
+    async def create_user(cls, message: types.Message) -> None:
         user = User(user_id=message.from_user.id, username=message.from_user.username)
-        await self._create_float_settings(user.user_id)
-        await self._create_sticker_settings(user.user_id)
-        await self.user_crud.save(user)
+        await cls._create_float_settings(user.user_id)
+        await cls._create_sticker_settings(user.user_id)
+        await cls.user_crud.save(user)
 
-    async def get_user_info(self, message: types.Message) -> UserInfo:
+    @classmethod
+    async def get_user_info(cls, message: types.Message) -> UserInfo:
         user_id = message.from_user.id
-        user_info = await self.user_crud.get(user_id)
-        user_info = UserInfo(user_id=user_info.user_id, username=user_info.username)
+        user_info = await cls.user_crud.get(user_id)
+        user_info = user_info.dict()
+        del user_info["id"]
+        user_info = UserInfo(**user_info)
         return user_info
 
     async def _create_float_settings(self, user_id: int):
         await SettingsWorker(FloatSettings, FloatSettingsInfo).create_settings_document(
-            user_id
+            user_id=user_id
         )
 
     async def _create_sticker_settings(self, user_id: int) -> None:
         await SettingsWorker(
             StickerSettings, StickerSettingsInfo
-        ).create_settings_document(user_id)
+        ).create_settings_document(user_id=user_id)
 
 
 class SettingsWorker:

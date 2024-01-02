@@ -3,6 +3,7 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
 class Descriptions:
     botDescription = "MarketCSGO skin helper"
+    profileDescription = ""
 
 
 class Buttons:
