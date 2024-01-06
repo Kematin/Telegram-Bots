@@ -1,1 +1,7 @@
 venv
+.env
+__pycache__
+admin-panel/backend/logs/*.log
+database/store.db
+projects/*
+!projects/init
