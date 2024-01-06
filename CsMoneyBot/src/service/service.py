@@ -9,6 +9,7 @@ from models.stickers import StickerSettings
 from models.users import User
 
 
+# TODO
 class UserWorker:
     user_crud = Database(User)
 
