@@ -50,6 +50,7 @@ class Project(Base):
     name = Column(String(length=70), unique=False)
     summary = Column(Text)
     price = Column(Integer)
+    category = Column(Integer)
     have_presentation = Column(Boolean)
     have_product = Column(Boolean)
     have_unique = Column(Boolean)
@@ -149,6 +150,8 @@ class Database:
             return False
 
         for key, value in data.items():
+            if value is None:
+                continue
             setattr(db_item, key, value)
 
         self._db.add(db_item)

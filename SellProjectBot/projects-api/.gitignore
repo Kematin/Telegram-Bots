@@ -1,0 +1,4 @@
+database/store.db
+projects/*
+!/projects/init.prod
+logs/*.log

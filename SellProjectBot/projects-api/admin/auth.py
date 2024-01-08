@@ -39,13 +39,19 @@ def verify_access_token(token: str) -> dict:
         )
 
 
-# async def authenticate(token: str = Depends(oauth2_scheme)) -> str:
+# async def authenticate_admin(token: str = Depends(oauth2_scheme)) -> str:
 #     if not token:
 #         raise HTTPException(
 #             status_code=status.HTTP_403_FORBIDDEN, detail="Sign in for access."
 #         )
 
 #     decoded_token = verify_access_token(token)
+#     if decoded_token["user"] != config.ADMIN_USERNAME:
+#         raise HTTPException(
+#             status_code=status.HTTP_403_FORBIDDEN,
+#             detail="Only admin can access to this event.",
+#         )
+
 #     return decoded_token["user"]
 
 

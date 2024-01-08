@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from loguru import logger
 
-from admin import admin_router
+from admin.admin import admin_router
 from database import init_models
 
 
@@ -14,7 +14,7 @@ def create_logger() -> None:
         "logs/debug.log",
         format="{time} {level} {message}",
         level="INFO",
-        rotation="100 KB",
+        rotation="5 MB",
         compression="zip",
     )
     logger.info("Start app")
@@ -40,4 +40,7 @@ app.add_middleware(
 )
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=3333, reload=True)
+    try:
+        uvicorn.run("main:app", host="0.0.0.0", port=3333, reload=True)
+    except (KeyboardInterrupt, SystemExit):
+        logger.info("Stop app")
