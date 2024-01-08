@@ -1,4 +1,6 @@
-from typing import Optional
+import os
+import shutil
+from typing import List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, status
 from fastapi.responses import FileResponse
@@ -117,7 +119,8 @@ async def create_project(
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid category."
         )
-    await project_database.create(data.model_dump())
+    project_id = await project_database.create(data.model_dump())
+    os.mkdir(f"projects/{project_id}")
     logger.info(f"Create new project with data {data}")
     return {"message": "succesfull"}
 
@@ -170,3 +173,48 @@ async def delete_projects(db=Depends(get_db), admin: str = Depends(authenticate)
 async def get_logs(admin: str = Depends(authenticate)):
     log_file = "./logs/debug.log"
     return FileResponse(path=log_file, filename="logs.log")
+
+
+async def add_file(project_id: UUID4, file: UploadFile | None, name: str) -> None:
+    if file is None:
+        return
+    else:
+        with open(f"projects/{project_id}/" + name, "wb") as wf:
+            shutil.copyfileobj(file.file, wf)
+            file.file.close()
+
+
+async def add_product(project_id: UUID4, files: List[UploadFile] | None) -> None:
+    if files is None:
+        return
+    else:
+        os.mkdir(f"projects/{project_id}/product")
+        for index, file in enumerate(files):
+            with open(f"projects/{project_id}/product/{index+1}.png", "wb") as wf:
+                shutil.copyfileobj(file.file, wf)
+                file.file.close()
+
+
+@admin_router.post("/files/{project_id}")
+async def add_files(
+    project_id: UUID4,
+    doc_file: UploadFile,
+    pptx_file: UploadFile | None = None,
+    unique_file: UploadFile | None = None,
+    product_files: List[UploadFile] | None = [],
+    db=Depends(get_db),
+    admin: str = Depends(authenticate),
+):
+    files_database = Database(Files, db)
+    project_database = Database(Project, db)
+    project = await project_database.get(project_id)
+    if not project:
+        logger.warning(f"Project with id {project_id} not found.")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Project with id {project_id} not found.",
+        )
+    else:
+        await add_file(project_id, doc_file, "document.doc")
+        await add_file(project_id, pptx_file, "presentation.pptx")
+        await add_file(project_id, unique_file, "unique.png")

@@ -129,6 +129,7 @@ class Database:
         db_data = self._model(**data)
         self._db.add(db_data)
         await self._uow.refresh(db_data)
+        return db_data.id
 
     async def delete(self, id: UUID4 | int) -> bool:
         item = await self.get(id)
