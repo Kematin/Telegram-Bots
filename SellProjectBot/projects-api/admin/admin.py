@@ -72,6 +72,7 @@ class ProjectChange(BaseModel):
 
 
 @admin_router.post("/auth", status_code=status.HTTP_202_ACCEPTED)
+@logger.catch(exclude=HTTPException)
 async def auth_admin(data: AuthAdmin) -> dict:
     username, password = data.username, data.password
     if username != config.ADMIN_USERNAME or password != config.ADMIN_PASSWORD:
@@ -84,6 +85,7 @@ async def auth_admin(data: AuthAdmin) -> dict:
 
 
 @admin_router.get("/projects")
+@logger.catch(exclude=HTTPException)
 async def retrieve_projects(
     category: str | None = None, db=Depends(get_db), admin: str = Depends(authenticate)
 ):
@@ -108,6 +110,7 @@ async def retrieve_projects(
 
 
 @admin_router.get("/project/{project_id}")
+@logger.catch(exclude=HTTPException)
 async def retrieve_single_project(
     project_id: UUID4,
     db=Depends(get_db),
@@ -127,6 +130,7 @@ async def retrieve_single_project(
 
 
 @admin_router.post("/project")
+@logger.catch(exclude=HTTPException)
 async def create_project(
     data: ProjectCreate,
     db=Depends(get_db),
@@ -146,6 +150,7 @@ async def create_project(
 
 
 @admin_router.put("/project/{project_id}")
+@logger.catch(exclude=HTTPException)
 async def update_project(
     project_id: UUID4,
     data: ProjectChange,
@@ -165,6 +170,7 @@ async def update_project(
 
 
 @admin_router.delete("/project/{project_id}")
+@logger.catch(exclude=HTTPException)
 async def delete_project(
     project_id: UUID4, db=Depends(get_db), admin: str = Depends(authenticate)
 ):
@@ -183,6 +189,7 @@ async def delete_project(
 
 
 @admin_router.delete("/project")
+@logger.catch(exclude=HTTPException)
 async def delete_projects(db=Depends(get_db), admin: str = Depends(authenticate)):
     project_database = Database(Project, db)
     await project_database.delete_all()
@@ -195,6 +202,7 @@ async def delete_projects(db=Depends(get_db), admin: str = Depends(authenticate)
 
 
 @admin_router.get("/logs")
+@logger.catch(exclude=HTTPException)
 async def get_logs(admin: str = Depends(authenticate)):
     log_file = "./logs/debug.log"
     return FileResponse(path=log_file, filename="logs.log")
@@ -224,6 +232,7 @@ async def add_product(project_id: UUID4, files: List[UploadFile] | None) -> None
 
 
 @admin_router.post("/files/{project_id}")
+@logger.catch(exclude=HTTPException)
 async def add_files(
     project_id: UUID4,
     doc_file: UploadFile,
@@ -251,6 +260,7 @@ async def add_files(
 
 
 @admin_router.get("/files/{project_id}")
+@logger.catch(exclude=HTTPException)
 async def retrieve_project_file(
     project_id: UUID4, type: str, db=Depends(get_db), admin: str = Depends(authenticate)
 ):

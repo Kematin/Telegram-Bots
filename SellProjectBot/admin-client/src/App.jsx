@@ -1,27 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Logs from "./pages/Logs/Logs";
+import AddProject from "./pages/AddProject/AddProject";
+import Projects from "./pages/Projects/Projects";
+import Undefined from "./pages/Undefined/Undefined";
+import ProjectCatergory from "./pages/ProjectCategory/ProjectCatergory";
+import Login from "./pages/Login/Login";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div></div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div id="app">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Projects />} />
+          <Route path="/add" element={<AddProject />} />
+          <Route path="/logs" element={<Logs />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/:category" element={<ProjectCatergory />} />
+          <Route path="*" element={<Undefined />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
