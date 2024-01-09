@@ -34,6 +34,7 @@ Base = declarative_base()
 
 async def init_models():
     async with engine.begin() as conn:
+        # await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
 
 
@@ -56,23 +57,6 @@ class Project(Base):
     have_unique = Column(Boolean)
     is_blocked = Column(Boolean, nullable=True, default=False)
     created_at = Column(DateTime, default=datetime.today)
-
-
-class Files(Base):
-    __tablename__ = "files"
-
-    id = Column(
-        "id",
-        Text(length=36),
-        default=lambda: str(uuid.uuid4()),
-        primary_key=True,
-        index=True,
-    )
-    project_id = Column(Integer, ForeignKey("project.id"))
-    doc_url = Column(Text)
-    pptx_url = Column(Text, nullable=True)
-    product_url = Column(Text, nullable=True)
-    unique_url = Column(Text, nullable=True)
 
 
 class SqlAlchemyUoW:

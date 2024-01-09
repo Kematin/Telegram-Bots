@@ -1,17 +1,20 @@
+import io
 import os
 import shutil
+import zipfile
 from typing import List, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, status
-from fastapi.responses import FileResponse
+from fastapi import APIRouter, Depends, Form, HTTPException, UploadFile, status
+from fastapi.responses import FileResponse, StreamingResponse
 from loguru import logger
 from pydantic import UUID4, BaseModel
 
 from admin.auth import authenticate, create_access_token
 from config import config
-from database import AsyncSessionLocal, Database, Files, Project
+from database import AsyncSessionLocal, Database, Project
 
 admin_router = APIRouter(tags=["Admin"])
+file_path = str
 
 
 # dependency
@@ -81,11 +84,27 @@ async def auth_admin(data: AuthAdmin) -> dict:
 
 
 @admin_router.get("/projects")
-async def retrieve_projects(db=Depends(get_db), admin: str = Depends(authenticate)):
+async def retrieve_projects(
+    category: str | None = None, db=Depends(get_db), admin: str = Depends(authenticate)
+):
     project_database = Database(Project, db)
     projects = await project_database.get_all()
-    logger.info("Get all projects.")
-    return {"projects": projects}
+    if category is None:
+        logger.info("Get all projects.")
+        return {"projects": projects}
+    elif category not in config.CATEGORIES:
+        logger.warning("Invalid category for projects")
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid category."
+        )
+    else:
+        projects = [
+            project
+            for project in projects
+            if project.category == config.CATEGORIES[category]
+        ]
+        logger.info(f"Get projects with type: {category}")
+        return {"projects": projects}
 
 
 @admin_router.get("/project/{project_id}")
@@ -119,10 +138,11 @@ async def create_project(
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid category."
         )
+    data.category = config.CATEGORIES[data.category]
     project_id = await project_database.create(data.model_dump())
     os.mkdir(f"projects/{project_id}")
     logger.info(f"Create new project with data {data}")
-    return {"message": "succesfull"}
+    return {"message": "successfull"}
 
 
 @admin_router.put("/project/{project_id}")
@@ -141,7 +161,7 @@ async def update_project(
             detail=f"Project with id {project_id} not found.",
         )
     logger.info(f"Update project with id {project_id}")
-    return {"message": "succesffull"}
+    return {"message": "successfull"}
 
 
 @admin_router.delete("/project/{project_id}")
@@ -151,8 +171,9 @@ async def delete_project(
     project_database = Database(Project, db)
     res = await project_database.delete(project_id)
     if res:
+        os.rmdir(f"projects/{project_id}")
         logger.info(f"Delete project {project_id}.")
-        return {"message": "succesfull"}
+        return {"message": "successfull"}
     else:
         logger.warning(f"Project with id {project_id} not found.")
         raise HTTPException(
@@ -165,6 +186,10 @@ async def delete_project(
 async def delete_projects(db=Depends(get_db), admin: str = Depends(authenticate)):
     project_database = Database(Project, db)
     await project_database.delete_all()
+    projects_path = os.listdir("projects/")
+    del projects_path[-1]
+    for path in projects_path:
+        os.rmdir(f"projects/{path}")
     logger.info("Delete all projects")
     return {"message": "succeffull"}
 
@@ -185,10 +210,13 @@ async def add_file(project_id: UUID4, file: UploadFile | None, name: str) -> Non
 
 
 async def add_product(project_id: UUID4, files: List[UploadFile] | None) -> None:
-    if files is None:
+    if not len(files):
         return
     else:
-        os.mkdir(f"projects/{project_id}/product")
+        try:
+            os.mkdir(f"projects/{project_id}/product")
+        except FileExistsError:
+            ...
         for index, file in enumerate(files):
             with open(f"projects/{project_id}/product/{index+1}.png", "wb") as wf:
                 shutil.copyfileobj(file.file, wf)
@@ -201,11 +229,10 @@ async def add_files(
     doc_file: UploadFile,
     pptx_file: UploadFile | None = None,
     unique_file: UploadFile | None = None,
-    product_files: List[UploadFile] | None = [],
+    product_files: List[UploadFile] = Form([]),
     db=Depends(get_db),
     admin: str = Depends(authenticate),
 ):
-    files_database = Database(Files, db)
     project_database = Database(Project, db)
     project = await project_database.get(project_id)
     if not project:
@@ -218,3 +245,54 @@ async def add_files(
         await add_file(project_id, doc_file, "document.doc")
         await add_file(project_id, pptx_file, "presentation.pptx")
         await add_file(project_id, unique_file, "unique.png")
+        await add_product(project_id, product_files)
+        logger.info(f"Add files to project {project_id}")
+        return {"message": "successfull"}
+
+
+@admin_router.get("/files/{project_id}")
+async def retrieve_project_file(
+    project_id: UUID4, type: str, db=Depends(get_db), admin: str = Depends(authenticate)
+):
+    project_database = Database(Project, db)
+    project = await project_database.get(project_id)
+    if not project:
+        logger.warning(f"Project with id {project_id} not found.")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Project with id {project_id} not found.",
+        )
+    if type not in config.FILE_TYPES:
+        logger.warning(f"Specified file type is not valid {project_id}")
+        raise HTTPException(
+            status_code=status.HTTP_406_NOT_ACCEPTABLE,
+            detail="Specified file type is not valid",
+        )
+    if type != "doc":
+        if not project.__dict__[config.PROJECT_FIELDS[type]]:
+            logger.warning(f"No {type} for project {project_id}")
+            raise HTTPException(
+                status_code=status.HTTP_406_NOT_ACCEPTABLE,
+                detail="Project dont have this type",
+            )
+    if type != "product":
+        filename = config.FILE_TYPES[type]
+        logger.info(f"Return {type} for project {project_id}")
+        return FileResponse(path=f"projects/{project_id}/{filename}")
+    else:
+        file_dir = f"projects/{project_id}/product"
+        files = os.listdir(file_dir)
+
+        zip_buffer = io.BytesIO()
+        with zipfile.ZipFile(zip_buffer, "a") as zip_file:
+            for file in files:
+                file_path = os.path.join(file_dir, file)
+                zip_file.write(file_path, arcname=file)
+        zip_buffer.seek(0)
+
+        logger.info(f"Return product zip for project {project_id}")
+        return StreamingResponse(
+            io.BytesIO(zip_buffer.getvalue()),
+            media_type="application/zip",
+            headers={"Content-Disposition": "attachment;filename=project.zip"},
+        )

@@ -41,6 +41,6 @@ app.add_middleware(
 
 if __name__ == "__main__":
     try:
-        uvicorn.run("main:app", host="0.0.0.0", port=3333, reload=True)
+        uvicorn.run("main:app", host="0.0.0.0", port=9999, reload=True)
     except (KeyboardInterrupt, SystemExit):
         logger.info("Stop app")
