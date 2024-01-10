@@ -6,8 +6,9 @@
   --dark: #242424;
   --light-dark: #333;
   --milk: #FDF4E3;
-  --simple-text: 19px;
-  --big-text: 25px;
+  --simple-text: 15px;
+  --big-text: 19px;
+  --header-text: 35px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   font-weight: 500;
@@ -25,4 +26,9 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  color: var(--milk);
+  font-size: var(--header-text);
 }

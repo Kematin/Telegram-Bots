@@ -157,6 +157,14 @@ async def update_project(
     db=Depends(get_db),
     admin: str = Depends(authenticate),
 ):
+    if data.category:
+        if data.category not in config.CATEGORIES:
+            logger.warning(f"Invalid category for new project with data {data}")
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid category."
+            )
+        else:
+            data.category = config.CATEGORIES[data.category]
     project_database = Database(Project, db)
     res = await project_database.update(project_id, data.model_dump())
     if not res:

@@ -1,10 +1,14 @@
 import React from "react";
-import projects from "../../utils/getProjects.js";
+import { getProjects } from "../../utils/getProjects.js";
+import ProjectTable from "../../components/ProjectTable/ProjectTable.jsx";
 
+const projects = await getProjects();
 function Projects() {
-  return projects.map((project, index) => {
-    return <h1 key={index}>{project.name}</h1>;
-  });
+  return (
+    <div className="projects-page">
+      <ProjectTable projects={projects} />
+    </div>
+  );
 }
 
 export default Projects;
