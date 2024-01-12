@@ -5,6 +5,14 @@ import "./index.css";
 import { useParams } from "react-router-dom";
 import { getProject } from "../../utils/getProjects.js";
 
+function LinkItem({ url, name }) {
+  return (
+    <a className="px-4 py-2 flex gap-2 rounded-lg link-item" href={url}>
+      {name}
+    </a>
+  );
+}
+
 function ListItem({ name, type }) {
   return (
     <li className="flex space-x-3">
@@ -29,8 +37,44 @@ function ListItem({ name, type }) {
 
 function ProjectPage() {
   const [isModal, setModal] = React.useState(false);
+  const [project, setProject] = React.useState(null);
   const { id } = useParams();
-  const [project, setProject] = useState(null);
+  const files = [];
+
+  function setProjectUrls(project) {
+    if (project) {
+      files.push({
+        data: {
+          url: `http://localhost:9999/admin/files/${project.id}?type=doc`,
+          description: "Скачать документ",
+        },
+      });
+      if (project.have_unique) {
+        files.push({
+          data: {
+            url: `http://localhost:9999/admin/files/${project.id}?type=png`,
+            description: "Скачать уникальность",
+          },
+        });
+      }
+      if (project.have_presentation) {
+        files.push({
+          data: {
+            url: `http://localhost:9999/admin/files/${project.id}?type=pptx`,
+            description: "Скачать презентацию",
+          },
+        });
+      }
+      if (project.have_product) {
+        files.push({
+          data: {
+            url: `http://localhost:9999/admin/files/${project.id}?type=product`,
+            description: "Скачать продукт",
+          },
+        });
+      }
+    }
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,12 +85,13 @@ function ProjectPage() {
         console.error("Error fetching project:", error);
       }
     };
-
     fetchData();
   }, [id]);
 
   if (!project) {
     return <div>Loading...</div>;
+  } else {
+    setProjectUrls(project);
   }
 
   return (
@@ -72,10 +117,19 @@ function ProjectPage() {
       >
         Изменить
       </button>
+
+      {files.map((data, index) => {
+        data = data.data;
+        return (
+          <div key={index}>
+            <LinkItem url={data.url} name={data.description} />
+          </div>
+        );
+      })}
       <ModalProject
         isVisible={isModal}
         title={`${project.name}`}
-        content={<ChangeProject />}
+        content={<ChangeProject project={project} />}
         footer={<p>{project.created_at}</p>}
         onClose={() => setModal(false)}
       />

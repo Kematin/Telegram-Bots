@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChangeProject() {
+function ChangeProject({ project }) {
   return (
     <div className="change-project">
       <input type="text" name="" id="" />

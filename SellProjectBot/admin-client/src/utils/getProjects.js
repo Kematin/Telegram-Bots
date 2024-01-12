@@ -38,6 +38,19 @@ export async function getProjects() {
   return data.projects;
 }
 
+export async function getProjectsCategory(category) {
+  const url = `http://localhost:9999/admin/projects?category=${category}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  data.projects.forEach((project) => {
+    changeCategory(project);
+    changeDatetime(project);
+    changeCurrency(project);
+  });
+
+  return data.projects;
+}
+
 export async function getProject(project_id) {
   const url = `http://localhost:9999/admin/project/${project_id}`;
   const response = await fetch(url);

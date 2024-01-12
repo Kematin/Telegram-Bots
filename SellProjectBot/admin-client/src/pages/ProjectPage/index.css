@@ -8,9 +8,20 @@
 .project-page h1 {
   margin: 30px;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .span-text {
   color: var(--milk)
 }
 
+.link-item {
+  margin: 30px;
+  margin-top: 15px;
+  color: var(--milk);
+  border: 2px solid var(--milk);
+}
+.link-item:hover {
+  border: 2px solid #7f9cf5;
+  color: #3182ce;
+}

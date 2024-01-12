@@ -19,6 +19,14 @@ class Settings(BaseSettings):
     PROJECT_FIELDS: dict = Field(
         {"pptx": "have_presentation", "png": "have_unique", "product": "have_product"}
     )
+    MEDIA_TYPES: dict = Field(
+        {
+            "doc": "application/msword",
+            "pptx": "application/vnd.ms-powerpoint",
+            "png": "image/png",
+            "product": "application/zip",
+        }
+    )
 
     class Config:
         env_file = ".env"

@@ -286,6 +286,7 @@ async def retrieve_project_file(
             status_code=status.HTTP_406_NOT_ACCEPTABLE,
             detail="Specified file type is not valid",
         )
+    media_type = config.MEDIA_TYPES[type]
     if type != "doc":
         if not project.__dict__[config.PROJECT_FIELDS[type]]:
             logger.warning(f"No {type} for project {project_id}")
@@ -296,7 +297,9 @@ async def retrieve_project_file(
     if type != "product":
         filename = config.FILE_TYPES[type]
         logger.info(f"Return {type} for project {project_id}")
-        return FileResponse(path=f"projects/{project_id}/{filename}")
+        return FileResponse(
+            path=f"projects/{project_id}/{filename}", media_type=media_type
+        )
     else:
         file_dir = f"projects/{project_id}/product"
         files = os.listdir(file_dir)
@@ -311,6 +314,6 @@ async def retrieve_project_file(
         logger.info(f"Return product zip for project {project_id}")
         return StreamingResponse(
             io.BytesIO(zip_buffer.getvalue()),
-            media_type="application/zip",
+            media_type=media_type,
             headers={"Content-Disposition": "attachment;filename=project.zip"},
         )
