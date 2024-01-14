@@ -25,6 +25,10 @@
   border-radius: 0.25rem;
   outline: none;
 }
+.files-combo {
+  display: flex;
+  justify-content: space-around;
+}
 .checkbox-input:checked {
   background-color: var(--accentBlue);
 }
@@ -65,3 +69,4 @@
 .form-border {
   border: 2px solid var(--accent);
 }
+

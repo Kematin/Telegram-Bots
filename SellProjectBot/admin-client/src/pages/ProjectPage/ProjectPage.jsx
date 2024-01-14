@@ -1,15 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import ChangeProject from "../../components/ChangeProject/ChangeProject.jsx";
 import ModalProject from "../../components/ModalProject/ModalProject.jsx";
 import "./index.css";
 import { useParams } from "react-router-dom";
-import { getProject } from "../../utils/getProjects.js";
+import { getProject, getFile } from "../../utils/getProjects.js";
 
-function LinkItem({ url, name }) {
+function DownloadFile({ name, fileName, type, typeResponse, projectId }) {
   return (
-    <a className="px-4 py-2 flex gap-2 rounded-lg link-item" href={url}>
+    <button
+      onClick={() => {
+        getFile(fileName, type, typeResponse, projectId);
+      }}
+      className="px-4 py-2 flex gap-2 rounded-lg link-item"
+    >
       {name}
-    </a>
+    </button>
   );
 }
 
@@ -45,31 +50,39 @@ function ProjectPage() {
     if (project) {
       files.push({
         data: {
-          url: `http://localhost:9999/admin/files/${project.id}?type=doc`,
-          description: "Скачать документ",
+          name: "Скачать документ",
+          type: "doc",
+          fileName: "document.doc",
+          typeResponse: "application/msword",
         },
       });
       if (project.have_unique) {
         files.push({
           data: {
-            url: `http://localhost:9999/admin/files/${project.id}?type=png`,
-            description: "Скачать уникальность",
+            name: "Скачать уникальность",
+            type: "png",
+            fileName: "unique.png",
+            typeResponse: "image/png",
           },
         });
       }
       if (project.have_presentation) {
         files.push({
           data: {
-            url: `http://localhost:9999/admin/files/${project.id}?type=pptx`,
-            description: "Скачать презентацию",
+            name: "Скачать презентацию",
+            type: "pptx",
+            fileName: "presentation.pptx",
+            typeResponse: "application/vnd.ms-powerpoint",
           },
         });
       }
       if (project.have_product) {
         files.push({
           data: {
-            url: `http://localhost:9999/admin/files/${project.id}?type=product`,
-            description: "Скачать продукт",
+            name: "Скачать продукт",
+            type: "product",
+            fileName: "product.zip",
+            typeResponse: "application/zip",
           },
         });
       }
@@ -122,7 +135,13 @@ function ProjectPage() {
         data = data.data;
         return (
           <div key={index}>
-            <LinkItem url={data.url} name={data.description} />
+            <DownloadFile
+              name={data.name}
+              type={data.type}
+              fileName={data.fileName}
+              typeResponse={data.typeResponse}
+              projectId={id}
+            />
           </div>
         );
       })}

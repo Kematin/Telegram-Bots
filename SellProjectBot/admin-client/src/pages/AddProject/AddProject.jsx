@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { addProject } from "../../utils/addProject";
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 
 function InputField({ label, value, onChange }) {
@@ -28,17 +30,43 @@ function TextArea({ label, value, onChange }) {
   );
 }
 
-function CheckBox({ label, isChecked, handleCheckboxChange }) {
+function UploadFile({ name, setFile, idSuffix }) {
+  const [fileSelected, setFileSelected] = useState(false);
+  const inputId = `upload ${idSuffix}`;
+  const handleFileChange = (event) => {
+    setFileSelected(!!event.target.files.length);
+    setFile(!!event.target.files.length);
+  };
   return (
-    <label className="label-text">
+    <div className="rounded-md border-2 border-indigo-500 bg-transparent-50 p-4 shadow-md w-36">
+      <label
+        htmlFor={inputId}
+        className="flex flex-col items-center gap-2 cursor-pointer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10 fill-white stroke-indigo-500"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          />
+        </svg>
+        <span className="label-text font-medium">
+          {fileSelected ? "✔️" : name}
+        </span>
+      </label>
       <input
-        type="checkbox"
-        checked={isChecked}
-        onChange={handleCheckboxChange}
-        className="checkbox-input mr-1"
+        id={inputId}
+        type="file"
+        className="hidden"
+        onChange={handleFileChange}
       />
-      {label}
-    </label>
+    </div>
   );
 }
 
@@ -76,24 +104,30 @@ function AddProject() {
   const [name, setName] = useState("");
   const [summary, setSummary] = useState("");
   const [price, setPrice] = useState("");
-  const [checkPresentation, setPresentation] = useState(false);
-  const [checkUnique, setUnique] = useState(false);
-  const [checkProduct, setProduct] = useState(false);
   const [category, setCategory] = useState("minimum");
-  function createProject(event) {
+
+  const [haveDoc, setHaveDoc] = useState(false);
+  const [havePptx, setHavePptx] = useState(false);
+  const [haveUnique, setHaveUnique] = useState(false);
+  const [haveProduct, setHaveProduct] = useState(false);
+
+  const navigate = useNavigate();
+  const createProject = async (event) => {
     event.preventDefault();
     const data = {
       name: name,
       summary: summary,
       price: price,
       category: category,
-      have_presentation: checkPresentation,
-      have_unique: checkUnique,
-      have_product: checkProduct,
+      have_presentation: havePptx,
+      have_unique: haveUnique,
+      have_product: haveProduct,
     };
-    console.log(data);
-    return false;
-  }
+    const response = await addProject(data);
+    const new_id = await response.json();
+    console.log(new_id);
+    navigate("/");
+  };
   return (
     <div id="add-project-page">
       <h1>BITCH</h1>
@@ -124,31 +158,6 @@ function AddProject() {
                   setPrice(event.target.value);
                 }}
               />
-              <div className="checkbox-combo mb-4">
-                <CheckBox
-                  label="Презентация"
-                  isChecked={checkPresentation}
-                  handleCheckboxChange={() => {
-                    const newCheckedState = !checkPresentation;
-                    setPresentation(newCheckedState);
-                  }}
-                />
-                <CheckBox
-                  label="Уникальность"
-                  isChecked={checkUnique}
-                  handleCheckboxChange={() => {
-                    setUnique(!checkUnique);
-                  }}
-                />
-                <CheckBox
-                  label="Продукт"
-                  isChecked={checkProduct}
-                  handleCheckboxChange={() => {
-                    setProduct(!checkProduct);
-                  }}
-                />
-              </div>
-
               <SelectFromListInput
                 label="Категория"
                 options={["minimum", "full11", "full9"]}
@@ -157,9 +166,32 @@ function AddProject() {
                 }}
               />
 
+              <div className="flex files-combo">
+                <UploadFile
+                  name="Документ"
+                  idSuffix="doc"
+                  setFile={setHaveDoc}
+                />
+                <UploadFile
+                  name="Презентация"
+                  idSuffix="pptx"
+                  setFile={setHavePptx}
+                />
+                <UploadFile
+                  name="Уникальность"
+                  idSuffix="unique"
+                  setFile={setHaveUnique}
+                />
+                <UploadFile
+                  name="Продукт"
+                  idSuffix="product"
+                  setFile={setHaveProduct}
+                />
+              </div>
+
               <div className="submit-button flex justify-end">
                 <button
-                  className="py-1.5 px-3 m-1 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out"
+                  className="py-2 px-3 mt-4 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out"
                   type="submit"
                 >
                   Создать

@@ -61,3 +61,20 @@ export async function getProject(project_id) {
 
   return data.project;
 }
+
+export function getFile(fileName, type, typeResponse, projectId) {
+  fetch(`http://localhost:9999/admin/files/${projectId}?type=${type}`).then(
+    (response) => {
+      response.arrayBuffer().then((buffer) => {
+        const link = document.createElement("a");
+        link.download = fileName;
+        const blob = new Blob([buffer], {
+          type: typeResponse,
+        });
+        link.href = URL.createObjectURL(blob);
+        link.click();
+        URL.revokeObjectURL(link.href);
+      });
+    }
+  );
+}

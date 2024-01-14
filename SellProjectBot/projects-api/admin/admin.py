@@ -146,7 +146,7 @@ async def create_project(
     project_id = await project_database.create(data.model_dump())
     os.mkdir(f"projects/{project_id}")
     logger.info(f"Create new project with data {data}")
-    return {"message": "successfull"}
+    return {"new_id": project_id}
 
 
 @admin_router.put("/project/{project_id}")

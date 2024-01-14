@@ -18,6 +18,7 @@
 .link-item {
   margin: 30px;
   margin-top: 15px;
+  width: 220px;
   color: var(--milk);
   border: 2px solid var(--milk);
 }
