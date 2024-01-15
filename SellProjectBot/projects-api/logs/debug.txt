@@ -1,0 +1,1304 @@
+2024-01-14T18:31:20.353893+0500 INFO Start app
+2024-01-14T18:31:25.839620+0500 INFO Get all projects.
+2024-01-14T18:31:25.849120+0500 INFO Get all projects.
+2024-01-14T18:31:28.472086+0500 INFO Start app
+2024-01-14T18:31:28.535798+0500 INFO Get projects with type: full11
+2024-01-14T18:31:28.537187+0500 INFO Get projects with type: minimum
+2024-01-14T18:31:28.623394+0500 INFO Get projects with type: full11
+2024-01-14T18:31:28.626909+0500 INFO Get projects with type: minimum
+2024-01-14T18:31:33.973887+0500 INFO Get projects with type: minimum
+2024-01-14T18:31:33.980945+0500 INFO Get projects with type: minimum
+2024-01-14T18:37:51.752258+0500 INFO Get projects with type: full11
+2024-01-14T18:37:51.760867+0500 INFO Get projects with type: full11
+2024-01-14T18:37:54.033336+0500 INFO Get all projects.
+2024-01-14T18:37:54.040105+0500 INFO Get all projects.
+2024-01-14T18:37:58.395761+0500 INFO Get all projects.
+2024-01-14T18:37:58.404258+0500 INFO Get all projects.
+2024-01-14T18:38:07.174346+0500 INFO Create new project with data name='dvsdgv' summary='sdgsdg' price=3124134 have_presentation=False have_product=True have_unique=False category=3
+2024-01-14T18:38:07.231883+0500 INFO Get all projects.
+2024-01-14T18:38:07.240501+0500 INFO Get all projects.
+2024-01-14T18:38:07.302878+0500 INFO Add files to project 7504ee9c-4fa5-41df-9734-8a2103b45057
+2024-01-14T18:38:49.570948+0500 INFO Get projects with type: minimum
+2024-01-14T18:38:49.578607+0500 INFO Get projects with type: minimum
+2024-01-14T18:38:54.279904+0500 INFO Get all projects.
+2024-01-14T18:38:54.287410+0500 INFO Get all projects.
+2024-01-14T18:38:56.077747+0500 INFO Get all projects.
+2024-01-14T18:38:56.086565+0500 INFO Get all projects.
+2024-01-14T18:38:58.341703+0500 INFO Get projects with type: full11
+2024-01-14T18:38:58.348417+0500 INFO Get projects with type: full11
+2024-01-14T18:39:00.905245+0500 INFO Get projects with type: full9
+2024-01-14T18:39:00.912877+0500 INFO Get projects with type: full9
+2024-01-14T22:00:32.850631+0500 INFO Start app
+2024-01-14T22:02:11.897267+0500 INFO Get all projects.
+2024-01-14T22:02:11.909263+0500 INFO Get all projects.
+2024-01-14T22:02:12.736080+0500 INFO Get projects with type: full11
+2024-01-14T22:02:12.746024+0500 INFO Get projects with type: full11
+2024-01-14T22:02:13.197756+0500 INFO Get projects with type: full9
+2024-01-14T22:02:13.878148+0500 INFO Get projects with type: minimum
+2024-01-14T22:04:50.259801+0500 INFO Get projects with type: minimum
+2024-01-14T22:04:50.270737+0500 INFO Get projects with type: minimum
+2024-01-14T22:04:50.520943+0500 INFO Get projects with type: minimum
+2024-01-14T22:04:50.527712+0500 INFO Get projects with type: minimum
+2024-01-14T22:04:51.360142+0500 INFO Get projects with type: full9
+2024-01-14T22:04:51.717531+0500 INFO Get projects with type: full11
+2024-01-14T22:04:52.604378+0500 INFO Get all projects.
+2024-01-14T22:04:52.612057+0500 INFO Get all projects.
+2024-01-14T22:05:18.258267+0500 INFO Get projects with type: minimum
+2024-01-14T22:05:18.265614+0500 INFO Get projects with type: minimum
+2024-01-14T22:05:24.609903+0500 INFO Get projects with type: full11
+2024-01-14T22:05:24.617506+0500 INFO Get projects with type: full11
+2024-01-14T22:05:34.772721+0500 INFO Get all projects.
+2024-01-14T22:05:34.785607+0500 INFO Get all projects.
+2024-01-14T22:05:34.789746+0500 INFO Create new project with data name='advadvad' summary='gadgad' price=2352352 have_presentation=False have_product=True have_unique=False category=3
+2024-01-14T22:05:34.847294+0500 INFO Add files to project f9dca937-1758-4d3f-b4d7-e74d12bad2f1
+2024-01-14T22:05:43.698500+0500 INFO Get all projects.
+2024-01-14T22:05:43.705936+0500 INFO Get all projects.
+2024-01-14T22:05:45.245668+0500 INFO Delete project 7504ee9c-4fa5-41df-9734-8a2103b45057.
+2024-01-14T22:05:45.396705+0500 INFO Get all projects.
+2024-01-14T22:05:45.404473+0500 INFO Get all projects.
+2024-01-14T22:05:45.806811+0500 INFO Delete project f9dca937-1758-4d3f-b4d7-e74d12bad2f1.
+2024-01-14T22:05:45.938022+0500 INFO Get all projects.
+2024-01-14T22:05:45.946104+0500 INFO Get all projects.
+2024-01-14T22:06:05.801489+0500 INFO Get projects with type: minimum
+2024-01-14T22:06:05.808301+0500 INFO Get projects with type: minimum
+2024-01-14T22:06:06.213210+0500 INFO Get projects with type: full9
+2024-01-14T22:06:06.658221+0500 INFO Get projects with type: minimum
+2024-01-14T22:06:06.890599+0500 INFO Get projects with type: full11
+2024-01-14T22:06:07.910286+0500 INFO Get all projects.
+2024-01-14T22:06:07.917684+0500 INFO Get all projects.
+2024-01-14T22:06:08.596841+0500 INFO Get all projects.
+2024-01-14T22:06:08.604466+0500 INFO Get all projects.
+2024-01-14T22:06:09.795042+0500 INFO Get projects with type: full11
+2024-01-14T22:06:09.802211+0500 INFO Get projects with type: full11
+2024-01-14T22:06:10.069301+0500 INFO Get projects with type: full9
+2024-01-14T22:06:10.345408+0500 INFO Get projects with type: minimum
+2024-01-14T22:06:11.116916+0500 INFO Get projects with type: full11
+2024-01-14T22:06:11.461823+0500 INFO Get projects with type: full9
+2024-01-14T22:06:11.696952+0500 INFO Get projects with type: minimum
+2024-01-14T22:06:12.516959+0500 INFO Get projects with type: minimum
+2024-01-14T22:06:12.524927+0500 INFO Get projects with type: minimum
+2024-01-14T22:06:25.709757+0500 INFO Get all projects.
+2024-01-14T22:06:25.718020+0500 INFO Get all projects.
+2024-01-14T22:07:08.364351+0500 INFO Get all projects.
+2024-01-14T22:07:08.378458+0500 INFO Create new project with data name='cool project' summary='summart project' price=800 have_presentation=False have_product=True have_unique=False category=3
+2024-01-14T22:07:08.380405+0500 INFO Get all projects.
+2024-01-14T22:07:08.403298+0500 INFO Add files to project efb3148c-19ea-4a1e-8fc0-eba63c72c924
+2024-01-14T22:07:10.109730+0500 INFO Get project efb3148c-19ea-4a1e-8fc0-eba63c72c924.
+2024-01-14T22:07:10.123806+0500 INFO Get project efb3148c-19ea-4a1e-8fc0-eba63c72c924.
+2024-01-14T22:07:12.927497+0500 ERROR An error has been caught in function 'run_endpoint_function', process 'SpawnProcess-1' (884), thread 'MainThread' (140527716368384):
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 8
+               └ <function _main at 0x7fcf284c1990>
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7fcf2862cca0>
+           └ <SpawnProcess name='SpawnProcess-1' parent=867 started>
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7fcf2862c310>
+    └ <SpawnProcess name='SpawnProcess-1' parent=867 started>
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7fcf284e1ae0>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=867 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=867 started>
+    │    └ <function subprocess_started at 0x7fcf27c4b520>
+    └ <SpawnProcess name='SpawnProcess-1' parent=867 started>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 9999)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7fcf284e1b70>>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 9999)>]
+           │       │   │    └ <function Server.serve at 0x7fcf27c4aa70>
+           │       │   └ <uvicorn.server.Server object at 0x7fcf284e1b70>
+           │       └ <function run at 0x7fcf284d0af0>
+           └ <module 'asyncio' from '/usr/lib/python3.10/asyncio/__init__.py'>
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7fcf25dd7530>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7fcf27de1fc0>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7fcf27de1f30>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7fcf27de3a30>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7fcf27f5b400>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcf25cdf130>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7fcf259c8d90>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcf25cdf130>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcf259c97e0>
+          └ <fastapi.applications.FastAPI object at 0x7fcf259c8d90>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7fcf259ebac0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x7fcf259cbf70>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcf259c97e0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+          │    │               │      │        │                     └ Headers({'host': 'localhost:9999', 'connection': 'keep-alive', 'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google...
+          │    │               │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7fcf259ebac0>
+          │    │               │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │    │               └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <function CORSMiddleware.simple_response at 0x7fcf26d12a70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x7fcf259cbf70>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+          │    │   │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x7fcf259cbf70>>, ...
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcf259c9810>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x7fcf259cbf70>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x7fcf259cbf70>>, ...
+          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x7fcf25a21240>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x7fcf259c8eb0>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcf259c9810>
+          └ <function wrap_app_handling_exceptions at 0x7fcf26cc3760>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7fcf259eba30>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x7fcf259c8eb0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7fcf259eba30>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │     └ <function Route.handle at 0x7fcf26ce09d0>
+          └ APIRoute(path='/admin/files/{project_id}', name='retrieve_project_file', methods=['GET'])
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7fcf259eba30>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <function request_response.<locals>.app at 0x7fcf259ebd90>
+          └ APIRoute(path='/admin/files/{project_id}', name='retrieve_project_file', methods=['GET'])
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7fcf259eba30>
+          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x7fcf250ca050>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x7fcf259ebf40>
+          └ <function wrap_app_handling_exceptions at 0x7fcf26cc3760>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7fcf250e1cf0>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcf2511bdc0>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x7fcf259ebf40>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 70, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7fcf250ca050>
+                     └ <function get_request_handler.<locals>.app at 0x7fcf259ebeb0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7fcf26ce1900>
+> File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'db': <sqlalchemy.orm.session.AsyncSession object at 0x7fcf250cb3d0>, 'admin': 'admin', 'project_id': UUID('efb3148c-19ea-4a...
+                 │         └ <function retrieve_project_file at 0x7fcf25c89bd0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x7fcf25a221a0>
+
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/admin/admin.py", line 306, in retrieve_project_file
+    files = os.listdir(file_dir)
+            │  │       └ 'projects/efb3148c-19ea-4a1e-8fc0-eba63c72c924/product'
+            │  └ <built-in function listdir>
+            └ <module 'os' from '/usr/lib/python3.10/os.py'>
+
+FileNotFoundError: [Errno 2] No such file or directory: 'projects/efb3148c-19ea-4a1e-8fc0-eba63c72c924/product'
+2024-01-14T22:07:20.149764+0500 INFO Get all projects.
+2024-01-14T22:07:20.157108+0500 INFO Get all projects.
+2024-01-14T22:07:22.103541+0500 INFO Get project efb3148c-19ea-4a1e-8fc0-eba63c72c924.
+2024-01-14T22:07:22.111833+0500 INFO Get project efb3148c-19ea-4a1e-8fc0-eba63c72c924.
+2024-01-14T22:20:56.630775+0500 INFO Get all projects.
+2024-01-14T22:20:56.644838+0500 INFO Get all projects.
+2024-01-14T22:20:57.967619+0500 INFO Delete project efb3148c-19ea-4a1e-8fc0-eba63c72c924.
+2024-01-14T22:20:58.101220+0500 INFO Get all projects.
+2024-01-14T22:20:58.108001+0500 INFO Get all projects.
+2024-01-14T22:21:12.592622+0500 INFO Get all projects.
+2024-01-14T22:21:12.825626+0500 INFO Get all projects.
+2024-01-14T22:21:12.840822+0500 INFO Create new project with data name='cool project' summary='summart cool' price=999 have_presentation=False have_product=False have_unique=False category=3
+2024-01-14T22:21:12.894588+0500 INFO Add files to project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf
+2024-01-14T22:21:14.186459+0500 INFO Get all projects.
+2024-01-14T22:21:14.193233+0500 INFO Get all projects.
+2024-01-14T22:21:25.183379+0500 INFO Get all projects.
+2024-01-14T22:21:25.190201+0500 INFO Get all projects.
+2024-01-14T22:21:27.648501+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:21:27.656132+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:23:50.265091+0500 INFO Get all projects.
+2024-01-14T22:23:50.272892+0500 INFO Get all projects.
+2024-01-14T22:23:50.962603+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:23:50.970097+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:25:19.557969+0500 INFO Get all projects.
+2024-01-14T22:25:19.565516+0500 INFO Get all projects.
+2024-01-14T22:25:27.360232+0500 INFO Get all projects.
+2024-01-14T22:25:27.367990+0500 INFO Get all projects.
+2024-01-14T22:25:28.087870+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:25:28.095913+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:29:13.306779+0500 INFO Get all projects.
+2024-01-14T22:29:13.314106+0500 INFO Get all projects.
+2024-01-14T22:29:13.790106+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:29:13.798460+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:36:52.293723+0500 INFO Get all projects.
+2024-01-14T22:36:52.300623+0500 INFO Get all projects.
+2024-01-14T22:36:53.132424+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:36:53.140492+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:38:34.066401+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:38:34.075438+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:38:39.630659+0500 INFO Get all projects.
+2024-01-14T22:38:39.639978+0500 INFO Get all projects.
+2024-01-14T22:38:40.413873+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:38:40.421099+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:40:07.044282+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:40:07.051397+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:40:16.689018+0500 INFO Get all projects.
+2024-01-14T22:40:16.705735+0500 INFO Get all projects.
+2024-01-14T22:40:16.709687+0500 INFO Create new project with data name='dasfg' summary='asdfgas' price=134 have_presentation=False have_product=True have_unique=False category=3
+2024-01-14T22:40:16.845413+0500 INFO Add files to project 635aaf9a-a16c-4147-8d10-35b3c97a2c76
+2024-01-14T22:40:17.842268+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:40:17.850521+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:41:14.503386+0500 INFO Get all projects.
+2024-01-14T22:41:14.511416+0500 INFO Get all projects.
+2024-01-14T22:41:16.246631+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:41:16.259773+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:41:21.195063+0500 INFO Get all projects.
+2024-01-14T22:41:21.201723+0500 INFO Get all projects.
+2024-01-14T22:41:21.944397+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:41:21.951736+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:42:44.579982+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:42:44.587436+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:42:57.225872+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:42:57.233355+0500 INFO Get project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:43:01.676258+0500 INFO Get all projects.
+2024-01-14T22:43:01.683242+0500 INFO Get all projects.
+2024-01-14T22:43:02.341681+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:43:02.348802+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:43:06.722413+0500 INFO Get all projects.
+2024-01-14T22:43:06.729365+0500 INFO Get all projects.
+2024-01-14T22:43:08.433707+0500 INFO Delete project 635aaf9a-a16c-4147-8d10-35b3c97a2c76.
+2024-01-14T22:43:08.846148+0500 INFO Get all projects.
+2024-01-14T22:43:08.857470+0500 INFO Get all projects.
+2024-01-14T22:43:21.516115+0500 INFO Create new project with data name='dfgdfg' summary='dfgdfgd' price=235235 have_presentation=True have_product=True have_unique=True category=1
+2024-01-14T22:43:21.524688+0500 INFO Get all projects.
+2024-01-14T22:43:21.590007+0500 INFO Get all projects.
+2024-01-14T22:43:21.625876+0500 INFO Add files to project f2be282b-96e5-444a-86be-079f3a2e882b
+2024-01-14T22:43:22.562062+0500 INFO Get project f2be282b-96e5-444a-86be-079f3a2e882b.
+2024-01-14T22:43:22.569457+0500 INFO Get project f2be282b-96e5-444a-86be-079f3a2e882b.
+2024-01-14T22:43:29.869396+0500 INFO Return product zip for project f2be282b-96e5-444a-86be-079f3a2e882b
+2024-01-14T22:44:37.452040+0500 INFO Get all projects.
+2024-01-14T22:44:37.461413+0500 INFO Get all projects.
+2024-01-14T22:44:38.322112+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:44:38.569689+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:45:26.756275+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:45:26.766130+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:48:48.835418+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:48:48.844048+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:49:39.523306+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:49:45.133202+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:50:35.082436+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:50:52.896384+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:50:52.903077+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:51:05.628140+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:51:09.236626+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:51:09.244415+0500 INFO Get project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:51:09.886105+0500 INFO Delete project 666f54f3-946d-4adf-bd18-4f0c0a2b7caf.
+2024-01-14T22:51:09.917341+0500 INFO Get all projects.
+2024-01-14T22:51:09.927714+0500 INFO Get all projects.
+2024-01-14T22:51:10.178853+0500 INFO Get all projects.
+2024-01-14T22:51:10.186972+0500 INFO Get all projects.
+2024-01-14T22:51:11.605846+0500 INFO Get project f2be282b-96e5-444a-86be-079f3a2e882b.
+2024-01-14T22:51:11.613274+0500 INFO Get project f2be282b-96e5-444a-86be-079f3a2e882b.
+2024-01-14T22:51:12.590515+0500 INFO Delete project f2be282b-96e5-444a-86be-079f3a2e882b.
+2024-01-14T22:51:12.621958+0500 INFO Get all projects.
+2024-01-14T22:51:12.629468+0500 INFO Get all projects.
+2024-01-14T22:51:12.886165+0500 INFO Get all projects.
+2024-01-14T22:51:12.892983+0500 INFO Get all projects.
+2024-01-14T22:51:24.618884+0500 INFO Get all projects.
+2024-01-14T22:51:24.852028+0500 INFO Get all projects.
+2024-01-14T22:51:24.867643+0500 INFO Create new project with data name='cool project' summary='asfasf' price=123 have_presentation=False have_product=False have_unique=False category=3
+2024-01-14T22:51:24.924908+0500 INFO Add files to project eb698b11-8adb-4a33-93a9-345147319cbb
+2024-01-14T22:51:27.288053+0500 INFO Get all projects.
+2024-01-14T22:51:27.295754+0500 INFO Get all projects.
+2024-01-14T22:51:29.415868+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:51:29.422165+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:51:51.626922+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:51:59.374283+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:52:08.585246+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:53:13.239727+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:55:45.915540+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:55:45.923371+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:56:30.273420+0500 WARNING Invalid category for new project with data name='cool project 2' summary='adsgsdagasdg' price=123 have_presentation=False have_product=False have_unique=False is_blocked=False category='Minimum'
+2024-01-14T22:57:22.815433+0500 INFO Get projects with type: full11
+2024-01-14T22:57:22.822657+0500 INFO Get projects with type: full11
+2024-01-14T22:57:23.014580+0500 INFO Get projects with type: full9
+2024-01-14T22:57:23.685365+0500 INFO Get projects with type: minimum
+2024-01-14T22:57:24.610852+0500 INFO Get projects with type: full9
+2024-01-14T22:57:24.899964+0500 INFO Get projects with type: full11
+2024-01-14T22:57:25.347390+0500 INFO Get projects with type: full9
+2024-01-14T22:57:26.102692+0500 INFO Get all projects.
+2024-01-14T22:57:26.110214+0500 INFO Get all projects.
+2024-01-14T22:57:41.831282+0500 INFO Get all projects.
+2024-01-14T22:57:41.894703+0500 INFO Get all projects.
+2024-01-14T22:57:43.190870+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:57:43.197867+0500 INFO Get project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:57:46.743401+0500 INFO Get all projects.
+2024-01-14T22:57:46.750320+0500 INFO Get all projects.
+2024-01-14T22:57:51.539616+0500 INFO Delete project eb698b11-8adb-4a33-93a9-345147319cbb.
+2024-01-14T22:57:51.822559+0500 INFO Get all projects.
+2024-01-14T22:57:51.829903+0500 INFO Get all projects.
+2024-01-14T22:58:03.429240+0500 INFO Get all projects.
+2024-01-14T22:58:03.444929+0500 INFO Get all projects.
+2024-01-14T22:58:03.446965+0500 INFO Create new project with data name='sgdds' summary='gsdgsd' price=23 have_presentation=True have_product=False have_unique=False category=1
+2024-01-14T22:58:03.468254+0500 INFO Add files to project 29f67ddf-5404-4691-8cd2-6bb9c2ca0e93
+2024-01-14T22:58:06.950500+0500 INFO Get project 29f67ddf-5404-4691-8cd2-6bb9c2ca0e93.
+2024-01-14T22:58:06.957328+0500 INFO Get project 29f67ddf-5404-4691-8cd2-6bb9c2ca0e93.
+2024-01-14T22:58:08.262120+0500 INFO Delete project 29f67ddf-5404-4691-8cd2-6bb9c2ca0e93.
+2024-01-14T22:58:08.293207+0500 INFO Get all projects.
+2024-01-14T22:58:08.303624+0500 INFO Get all projects.
+2024-01-14T22:58:08.555781+0500 INFO Get all projects.
+2024-01-14T22:58:08.562828+0500 INFO Get all projects.
+2024-01-14T22:58:30.715420+0500 INFO Create new project with data name='cool project' summary='summary cool project' price=123 have_presentation=False have_product=False have_unique=False category=3
+2024-01-14T22:58:30.723355+0500 INFO Get all projects.
+2024-01-14T22:58:30.787345+0500 INFO Get all projects.
+2024-01-14T22:58:30.799352+0500 INFO Add files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T22:58:31.670866+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T22:58:31.678113+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T22:59:33.524866+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T22:59:33.532814+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T22:59:45.953809+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T22:59:45.961442+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T22:59:54.113126+0500 INFO Get all projects.
+2024-01-14T22:59:54.120475+0500 INFO Get all projects.
+2024-01-14T22:59:56.817246+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T22:59:56.824368+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:04.927508+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:00:10.654009+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:10.661537+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:14.709242+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:00:17.757004+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:17.765016+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:37.883106+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:37.893139+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:41.640119+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:00:51.198502+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:00:51.206733+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:01:13.572980+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:01:13.580404+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:01:15.856583+0500 WARNING Invalid category for projects
+2024-01-14T23:01:15.865749+0500 WARNING Invalid category for projects
+2024-01-14T23:01:15.875932+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:01:16.237980+0500 WARNING Invalid category for projects
+2024-01-14T23:01:16.245335+0500 WARNING Invalid category for projects
+2024-01-14T23:01:40.329929+0500 INFO Get all projects.
+2024-01-14T23:01:40.338842+0500 INFO Get all projects.
+2024-01-14T23:01:41.209428+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:01:41.216688+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:01:46.974835+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:01:47.114727+0500 WARNING Invalid category for projects
+2024-01-14T23:01:47.121859+0500 WARNING Invalid category for projects
+2024-01-14T23:01:48.422367+0500 INFO Get all projects.
+2024-01-14T23:01:48.430468+0500 INFO Get all projects.
+2024-01-14T23:01:49.156696+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:01:49.164255+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:01:59.997717+0500 WARNING Invalid category for projects
+2024-01-14T23:02:00.005541+0500 WARNING Invalid category for projects
+2024-01-14T23:02:01.147674+0500 INFO Get all projects.
+2024-01-14T23:02:01.374583+0500 INFO Get all projects.
+2024-01-14T23:02:01.887526+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:01.894211+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:25.500459+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:25.507267+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:27.785344+0500 INFO Get all projects.
+2024-01-14T23:02:28.017218+0500 INFO Get all projects.
+2024-01-14T23:02:28.034377+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:02:28.073519+0500 INFO Get all projects.
+2024-01-14T23:02:28.082014+0500 INFO Get all projects.
+2024-01-14T23:02:35.280615+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:35.288672+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:42.537236+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=123 have_presentation=True have_product=False have_unique=False is_blocked=False category='Full 11'
+2024-01-14T23:02:42.552526+0500 INFO Get all projects.
+2024-01-14T23:02:42.854191+0500 INFO Get all projects.
+2024-01-14T23:02:42.862993+0500 INFO Get all projects.
+2024-01-14T23:02:45.181558+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:45.188179+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:54.494246+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:02:54.502693+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:03:10.188038+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:03:15.956375+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:03:15.971493+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:03:23.243660+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=123 have_presentation=True have_product=False have_unique=False is_blocked=False category='Full 11'
+2024-01-14T23:04:28.069268+0500 INFO Start app
+2024-01-14T23:04:32.872977+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=123 have_presentation=True have_product=False have_unique=False is_blocked=False category='Full 11'
+2024-01-14T23:05:17.807551+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:05:45.423660+0500 INFO Start app
+2024-01-14T23:05:51.901804+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:06:05.209988+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:06:05.218846+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:06:14.008058+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=123 have_presentation=True have_product=False have_unique=True is_blocked=False category='Full 9'
+2024-01-14T23:06:21.520407+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:06:21.529283+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:07:35.697933+0500 INFO Start app
+2024-01-14T23:07:45.339180+0500 INFO Start app
+2024-01-14T23:08:34.594537+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:08:34.603548+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:08:37.960155+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=123 have_presentation=True have_product=False have_unique=True is_blocked=False category='Full 9'
+2024-01-14T23:08:56.119065+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-14T23:09:49.070924+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:09:49.079210+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:09:51.639963+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:09:51.648309+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:09:56.899204+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=123 have_presentation=True have_product=True have_unique=True is_blocked=False category='Full 9'
+2024-01-14T23:10:33.433857+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:10:33.447906+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-14T23:10:39.242237+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=123 have_presentation=True have_product=True have_unique=True is_blocked=False category='Full 9'
+2024-01-15T14:52:10.538770+0500 INFO Start app
+2024-01-15T14:52:27.358270+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T14:52:27.367468+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T14:52:30.290963+0500 INFO Get projects with type: full9
+2024-01-15T14:52:30.299409+0500 INFO Get projects with type: full9
+2024-01-15T14:52:30.993403+0500 INFO Get projects with type: minimum
+2024-01-15T14:52:33.605478+0500 INFO Get projects with type: full9
+2024-01-15T14:52:34.302952+0500 INFO Get projects with type: full11
+2024-01-15T14:52:35.104240+0500 INFO Get all projects.
+2024-01-15T14:52:35.115334+0500 INFO Get all projects.
+2024-01-15T14:52:36.136581+0500 INFO Get projects with type: minimum
+2024-01-15T14:52:36.144529+0500 INFO Get projects with type: minimum
+2024-01-15T14:52:37.241724+0500 INFO Get projects with type: full9
+2024-01-15T14:52:37.599606+0500 INFO Get projects with type: full11
+2024-01-15T14:52:39.078650+0500 INFO Get projects with type: minimum
+2024-01-15T14:52:39.086552+0500 INFO Get projects with type: minimum
+2024-01-15T14:52:39.667362+0500 INFO Get all projects.
+2024-01-15T14:52:39.716092+0500 INFO Get all projects.
+2024-01-15T14:52:40.616943+0500 INFO Get all projects.
+2024-01-15T14:52:40.624619+0500 INFO Get all projects.
+2024-01-15T14:52:41.560876+0500 INFO Get projects with type: full9
+2024-01-15T14:52:41.569611+0500 INFO Get projects with type: full9
+2024-01-15T14:52:42.244903+0500 INFO Get all projects.
+2024-01-15T14:52:42.252525+0500 INFO Get all projects.
+2024-01-15T15:44:44.902255+0500 INFO Get all projects.
+2024-01-15T15:44:44.909665+0500 INFO Get all projects.
+2024-01-15T15:44:45.561528+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:44:45.568620+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:44:53.065145+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=1232 have_presentation=True have_product=False have_unique=True is_blocked=False category='Full 9'
+2024-01-15T15:45:06.755698+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:45:06.762482+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:45:11.280334+0500 WARNING Invalid category for new project with data name='cool project 2' summary='summary cool project' price=1233 have_presentation=True have_product=False have_unique=True is_blocked=False category='Full 9'
+2024-01-15T15:46:21.401007+0500 INFO Start app
+2024-01-15T15:46:35.177425+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T15:46:50.720562+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:46:50.733695+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:46:58.467775+0500 INFO Get all projects.
+2024-01-15T15:46:58.476157+0500 INFO Get all projects.
+2024-01-15T15:47:01.975020+0500 INFO Get projects with type: full11
+2024-01-15T15:47:01.982355+0500 INFO Get projects with type: full11
+2024-01-15T15:47:02.334632+0500 INFO Get all projects.
+2024-01-15T15:47:02.347535+0500 INFO Get all projects.
+2024-01-15T15:47:03.066636+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:47:03.087544+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:47:08.995524+0500 WARNING Invalid category for project with data name='cool project 2' summary='summary cool project' price=799 have_presentation=True have_product=False have_unique=True is_blocked=False category='Minimum'
+2024-01-15T15:48:49.562300+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:48:49.571498+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:48:53.247285+0500 WARNING Invalid category for project with data name='cool project 2' summary='summary cool project' price=1234 have_presentation=True have_product=False have_unique=True is_blocked=False category='Minimum'
+2024-01-15T15:57:29.477137+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:57:29.487677+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:57:32.870436+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T15:57:48.244174+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:57:48.256279+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T15:58:37.773407+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:00:26.354152+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:00:26.361144+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:00:28.753008+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:00:35.815096+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:00:35.821945+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:00:39.967904+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:00:42.998997+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:00:43.007305+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:01:05.083417+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:01:05.376250+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:01:05.386568+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:01:09.087370+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:01:09.101173+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:01:09.103226+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:01:20.215396+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:01:20.224197+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:02:02.114915+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:03:24.168700+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:03:24.177078+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:03:30.048981+0500 ERROR An error has been caught in function 'run_endpoint_function', process 'SpawnProcess-2' (12210), thread 'MainThread' (140186481971200):
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 8
+               └ <function _main at 0x7f7fb524d990>
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7f7fb53b4ca0>
+           └ <SpawnProcess name='SpawnProcess-2' parent=1532 started>
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f7fb53b4310>
+    └ <SpawnProcess name='SpawnProcess-2' parent=1532 started>
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7f7fb526dae0>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-2' parent=1532 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-2' parent=1532 started>
+    │    └ <function subprocess_started at 0x7f7fb49db520>
+    └ <SpawnProcess name='SpawnProcess-2' parent=1532 started>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 9999)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7f7fb526db70>>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 9999)>]
+           │       │   │    └ <function Server.serve at 0x7f7fb49daa70>
+           │       │   └ <uvicorn.server.Server object at 0x7f7fb526db70>
+           │       └ <function run at 0x7f7fb525caf0>
+           └ <module 'asyncio' from '/usr/lib/python3.10/asyncio/__init__.py'>
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7f7fb2b5f760>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7f7fb4b6dfc0>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f7fb4b6df30>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f7fb4b6fa30>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f7fb4ce7400>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f7fb2a767a0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7f7fb2782950>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f7fb2a767a0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f7fb27cc5e0>
+          └ <fastapi.applications.FastAPI object at 0x7f7fb2782950>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f7fb282a9e0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x7f7fb27cc820>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f7fb27cc5e0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+          │    │               │      │        │                     └ Headers({'host': 'localhost:9999', 'connection': 'keep-alive', 'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google...
+          │    │               │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f7fb282a9e0>
+          │    │               │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │    │               └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <function CORSMiddleware.simple_response at 0x7f7fb3ab2a70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x7f7fb27cc820>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+          │    │   │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x7f7fb27cc820>>, ...
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f7fb27cc7f0>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x7f7fb27cc820>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x7f7fb27cc820>>, ...
+          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x7f7fb27b1960>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x7f7fb2782a70>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f7fb27cc7f0>
+          └ <function wrap_app_handling_exceptions at 0x7f7fb3a5f760>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f7fb282ab90>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x7f7fb2782a70>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f7fb282ab90>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │     └ <function Route.handle at 0x7f7fb3a7c9d0>
+          └ APIRoute(path='/admin/files/{project_id}', name='retrieve_project_file', methods=['GET'])
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f7fb282ab90>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <function request_response.<locals>.app at 0x7f7fb27a4af0>
+          └ APIRoute(path='/admin/files/{project_id}', name='retrieve_project_file', methods=['GET'])
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f7fb282ab90>
+          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x7f7fb1f20490>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x7f7fb1f1a9e0>
+          └ <function wrap_app_handling_exceptions at 0x7f7fb3a5f760>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f7fb1f1a950>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f7fb1f21f60>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x7f7fb1f1a9e0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 70, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7f7fb1f20490>
+                     └ <function get_request_handler.<locals>.app at 0x7f7fb27a4ca0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7f7fb3a7d900>
+> File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'db': <sqlalchemy.orm.session.AsyncSession object at 0x7f7fb1f22980>, 'admin': 'admin', 'project_id': UUID('40a7e86a-e529-4b...
+                 │         └ <function retrieve_project_file at 0x7f7fb2a235b0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x7f7fb27b2950>
+
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/admin/admin.py", line 331, in retrieve_project_file
+    files = os.listdir(file_dir)
+            │  │       └ 'projects/40a7e86a-e529-4b21-b3d5-f7ce9504fc72/product'
+            │  └ <built-in function listdir>
+            └ <module 'os' from '/usr/lib/python3.10/os.py'>
+
+FileNotFoundError: [Errno 2] No such file or directory: 'projects/40a7e86a-e529-4b21-b3d5-f7ce9504fc72/product'
+2024-01-15T16:03:44.621542+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:05:02.482805+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:05:02.490498+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:05:07.151165+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:05:58.848789+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:05:58.856711+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:06:03.469192+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:06:03.566008+0500 INFO Change files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:06:07.509855+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:06:07.518470+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:06:08.403123+0500 INFO Return product zip for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:06:26.999018+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:06:34.161051+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:06:34.170435+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:06:58.283414+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:06:58.291337+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:07:02.425134+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:07:06.626333+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:07:06.634521+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:07:19.912785+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:07:19.921730+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:07:27.250068+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:07:27.537540+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:07:27.545580+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:07:51.622813+0500 INFO Return doc for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:08:02.709376+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:08:03.390466+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:08:03.398696+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:08:04.559158+0500 INFO Return product zip for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:08:16.551451+0500 INFO Return png for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:08:25.732989+0500 INFO Return pptx for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:09:27.635774+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:09:49.078317+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:09:54.739492+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:09:57.815277+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:09:57.823658+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:10:00.872087+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:10:28.787845+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:10:28.801219+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:10:32.489846+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:01.062785+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:02.128383+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:02.136552+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:05.936018+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:12.718341+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:18.279087+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:18.287671+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:22.324482+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:45.867220+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:45.875255+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:49.979239+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:50.049830+0500 INFO Change files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:53.605745+0500 INFO Return png for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:11:55.088823+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:55.097436+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:11:55.798871+0500 INFO Return png for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:12:19.413547+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:12:19.491533+0500 INFO Change files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:12:47.827894+0500 INFO Return png for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:14:55.867065+0500 INFO Start app
+2024-01-15T16:14:57.805791+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:14:57.827618+0500 INFO Change files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:15:06.881051+0500 INFO Return pptx for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:15:25.474124+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:15:25.544909+0500 INFO Change files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:15:32.364412+0500 INFO Return png for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:17:16.960630+0500 INFO Start app
+2024-01-15T16:18:30.816838+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:18:30.831275+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:18:36.823785+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:18:36.932233+0500 INFO Change files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:18:39.888742+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:18:39.896729+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:18:55.497320+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:18:55.504580+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:19:27.957340+0500 INFO Update project with id 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:19:28.030040+0500 INFO Change files to project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:19:37.087172+0500 INFO Get all projects.
+2024-01-15T16:19:37.095451+0500 INFO Get all projects.
+2024-01-15T16:19:37.719179+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:19:37.727243+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:20:16.213157+0500 INFO Return doc for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:21:37.006041+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:21:37.013772+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:21:49.326795+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:21:49.335604+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:22:20.545717+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:22:20.553241+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:22:21.309701+0500 INFO Return png for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:22:34.445357+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:22:34.463171+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:22:35.065861+0500 INFO Return png for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:22:40.055499+0500 INFO Return doc for project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72
+2024-01-15T16:24:01.510081+0500 INFO Get all projects.
+2024-01-15T16:24:01.517362+0500 INFO Get all projects.
+2024-01-15T16:24:02.147809+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:24:02.309756+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:25:33.057367+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:25:33.064854+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:26:41.139697+0500 INFO Get all projects.
+2024-01-15T16:26:41.370669+0500 INFO Get all projects.
+2024-01-15T16:26:41.388087+0500 INFO Create new project with data name='adgad' summary='gadg' price=123 have_presentation=False have_product=False have_unique=False category=3
+2024-01-15T16:26:41.445597+0500 INFO Add files to project e74af2ba-c5a1-40cf-887e-121795ddf8e8
+2024-01-15T16:26:41.920516+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:26:41.928071+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:26:42.546214+0500 INFO Get all projects.
+2024-01-15T16:26:42.554111+0500 INFO Get all projects.
+2024-01-15T16:26:43.333416+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:26:43.341160+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:26:48.998838+0500 INFO Update project with id e74af2ba-c5a1-40cf-887e-121795ddf8e8
+2024-01-15T16:26:49.122033+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:26:49.131183+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:26:50.171916+0500 INFO Return png for project e74af2ba-c5a1-40cf-887e-121795ddf8e8
+2024-01-15T16:26:52.957769+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:26:52.966595+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:26:53.580081+0500 INFO Return png for project e74af2ba-c5a1-40cf-887e-121795ddf8e8
+2024-01-15T16:27:17.502768+0500 INFO Update project with id e74af2ba-c5a1-40cf-887e-121795ddf8e8
+2024-01-15T16:27:17.707681+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:27:17.720766+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:27:44.777715+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:27:44.786221+0500 INFO Get project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:27:47.417279+0500 INFO Update project with id e74af2ba-c5a1-40cf-887e-121795ddf8e8
+2024-01-15T16:27:47.437445+0500 INFO Change files to project e74af2ba-c5a1-40cf-887e-121795ddf8e8
+2024-01-15T16:27:55.194283+0500 INFO Delete project e74af2ba-c5a1-40cf-887e-121795ddf8e8.
+2024-01-15T16:27:55.231608+0500 INFO Get all projects.
+2024-01-15T16:27:55.239372+0500 INFO Get all projects.
+2024-01-15T16:27:55.492663+0500 INFO Get all projects.
+2024-01-15T16:27:55.501278+0500 INFO Get all projects.
+2024-01-15T16:28:01.292604+0500 INFO Create new project with data name='asfg' summary='adgfad' price=13 have_presentation=False have_product=False have_unique=False category=3
+2024-01-15T16:28:01.299336+0500 INFO Get all projects.
+2024-01-15T16:28:01.349236+0500 INFO Get all projects.
+2024-01-15T16:28:01.411863+0500 INFO Add files to project 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:28:02.247398+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:28:02.254573+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:28:06.203101+0500 INFO Update project with id 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:28:06.320827+0500 INFO Change files to project 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:28:13.773139+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:28:13.782561+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:28:14.644020+0500 INFO Return png for project 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:28:26.574492+0500 INFO Update project with id 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:28:26.593771+0500 INFO Change files to project 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:30:00.165909+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:00.174127+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:00.776593+0500 INFO Get all projects.
+2024-01-15T16:30:00.804039+0500 INFO Get all projects.
+2024-01-15T16:30:01.602656+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:01.610193+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:06.647999+0500 INFO Update project with id 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:30:06.724844+0500 INFO Change files to project 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:30:35.781091+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:35.790160+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:39.645863+0500 INFO Update project with id 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:30:39.724080+0500 INFO Change files to project 192710f7-1906-4004-9ff8-5a656aa5f5b6
+2024-01-15T16:30:39.979050+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:39.987784+0500 INFO Get project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:42.906572+0500 INFO Delete project 192710f7-1906-4004-9ff8-5a656aa5f5b6.
+2024-01-15T16:30:42.947123+0500 INFO Get all projects.
+2024-01-15T16:30:42.955609+0500 INFO Get all projects.
+2024-01-15T16:30:43.206169+0500 INFO Get all projects.
+2024-01-15T16:30:43.214663+0500 INFO Get all projects.
+2024-01-15T16:30:44.211404+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:30:44.433104+0500 INFO Get project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:30:48.719709+0500 INFO Delete project 40a7e86a-e529-4b21-b3d5-f7ce9504fc72.
+2024-01-15T16:30:48.763172+0500 INFO Get all projects.
+2024-01-15T16:30:48.771002+0500 INFO Get all projects.
+2024-01-15T16:30:49.002676+0500 INFO Get all projects.
+2024-01-15T16:30:49.011708+0500 INFO Get all projects.
+2024-01-15T16:30:57.049054+0500 INFO Create new project with data name='dazvadg' summary='adg' price=123 have_presentation=False have_product=False have_unique=False category=3
+2024-01-15T16:30:57.060411+0500 INFO Get all projects.
+2024-01-15T16:30:57.121707+0500 INFO Get all projects.
+2024-01-15T16:30:57.152409+0500 INFO Add files to project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:30:57.608523+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:30:57.615579+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:31:01.669761+0500 INFO Update project with id 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:31:01.780062+0500 INFO Change files to project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:31:02.015042+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:31:02.022885+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:31:03.666715+0500 INFO Return png for project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:31:11.845940+0500 INFO Update project with id 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:31:11.882800+0500 INFO Change files to project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:31:12.161603+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:31:12.169166+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:31:14.097113+0500 INFO Return product zip for project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:31:57.525340+0500 INFO Start app
+2024-01-15T16:32:02.258333+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:02.268683+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:07.905066+0500 INFO Update project with id 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:32:08.217101+0500 INFO Change files to project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:32:08.472323+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:08.480696+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:09.580219+0500 INFO Return product zip for project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:32:29.386517+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:29.395956+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:38.182986+0500 INFO Update project with id 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:32:38.242048+0500 INFO Change files to project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:32:38.506309+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:38.513875+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:32:39.643483+0500 INFO Return product zip for project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:33:20.271265+0500 INFO Start app
+2024-01-15T16:34:04.005538+0500 INFO Start app
+2024-01-15T16:34:23.974568+0500 INFO Start app
+2024-01-15T16:34:40.844977+0500 INFO Start app
+2024-01-15T16:34:46.124867+0500 INFO Update project with id 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:34:46.164334+0500 INFO Change files to project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:34:46.435933+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:34:46.443488+0500 INFO Get project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:34:47.984468+0500 INFO Return product zip for project 1a83b69c-8ab5-46bf-956a-85878c0ac430
+2024-01-15T16:35:03.596759+0500 INFO Delete project 1a83b69c-8ab5-46bf-956a-85878c0ac430.
+2024-01-15T16:35:03.634718+0500 INFO Get all projects.
+2024-01-15T16:35:03.691837+0500 INFO Get all projects.
+2024-01-15T16:35:03.882686+0500 INFO Get all projects.
+2024-01-15T16:35:03.891749+0500 INFO Get all projects.
+2024-01-15T16:35:17.150476+0500 INFO Get all projects.
+2024-01-15T16:35:17.381128+0500 INFO Get all projects.
+2024-01-15T16:35:17.397329+0500 INFO Create new project with data name='afda' summary='fadf' price=134 have_presentation=False have_product=True have_unique=False category=3
+2024-01-15T16:35:17.462338+0500 ERROR An error has been caught in function 'run_endpoint_function', process 'SpawnProcess-1' (32516), thread 'MainThread' (140260927041536):
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 8
+               └ <function _main at 0x7f910a6a1990>
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7f910a80cca0>
+           └ <SpawnProcess name='SpawnProcess-1' parent=32486 started>
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f910a80c310>
+    └ <SpawnProcess name='SpawnProcess-1' parent=32486 started>
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7f910a6c1ae0>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=32486 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=32486 started>
+    │    └ <function subprocess_started at 0x7f9109e2f520>
+    └ <SpawnProcess name='SpawnProcess-1' parent=32486 started>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 9999)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7f910a6c1b70>>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 9999)>]
+           │       │   │    └ <function Server.serve at 0x7f9109e2ea70>
+           │       │   └ <uvicorn.server.Server object at 0x7f910a6c1b70>
+           │       └ <function run at 0x7f910a6b0af0>
+           └ <module 'asyncio' from '/usr/lib/python3.10/asyncio/__init__.py'>
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7f9107fc36f0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7f9109fc5fc0>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f9109fc5f30>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f9109fc7a30>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f910a13f400>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f9107ba4fd0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7f9107bdae60>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f9107ba4fd0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f9107bdbf10>
+          └ <fastapi.applications.FastAPI object at 0x7f9107bdae60>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f9107be1630>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x7f9107bdbdf0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f9107bdbf10>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+          │    │               │      │        │                     └ Headers({'host': 'localhost:9999', 'connection': 'keep-alive', 'content-length': '553954', 'sec-ch-ua': '"Not_A Brand";v="8",...
+          │    │               │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f9107be1630>
+          │    │               │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │    │               └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <function CORSMiddleware.simple_response at 0x7f9108efaa70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x7f9107bdbdf0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+          │    │   │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x7f9107bdbdf0>>, ...
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f9107c26080>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x7f9107bdbdf0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x7f9107bdbdf0>>, ...
+          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x7f9107c087f0>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x7f9107bdaf80>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f9107c26080>
+          └ <function wrap_app_handling_exceptions at 0x7f9108eab760>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f9107bfeb00>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x7f9107bdaf80>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f9107bfeb00>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │     └ <function Route.handle at 0x7f9108ec89d0>
+          └ APIRoute(path='/admin/files/{project_id}', name='add_files', methods=['POST'])
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f9107bfeb00>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │    └ <function request_response.<locals>.app at 0x7f9107bff250>
+          └ APIRoute(path='/admin/files/{project_id}', name='add_files', methods=['POST'])
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f9107bfeb00>
+          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x7f9107c0b970>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x7f9107f5d6c0>
+          └ <function wrap_app_handling_exceptions at 0x7f9108eab760>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x7f9107f5d900>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f9107c25a20>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 9999), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x7f9107f5d6c0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/starlette/routing.py", line 70, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7f9107c0b970>
+                     └ <function get_request_handler.<locals>.app at 0x7f9107bff1c0>
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7f9108ec9900>
+> File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/venv/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'db': <sqlalchemy.orm.session.AsyncSession object at 0x7f9107c27df0>, 'admin': 'admin', 'project_id': UUID('a37031f0-0623-4a...
+                 │         └ <function add_files at 0x7f9107e0b910>
+                 └ <fastapi.dependencies.models.Dependant object at 0x7f9107c0ac80>
+
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/admin/admin.py", line 265, in add_files
+    await add_product(project_id, product_files)
+          │           │           └ [<starlette.datastructures.UploadFile object at 0x7f9107c26620>, <starlette.datastructures.UploadFile object at 0x7f910733ded...
+          │           └ UUID('a37031f0-0623-4ac8-b1e2-1fd59e161e06')
+          └ <function add_product at 0x7f9107e0bd00>
+
+  File "/mnt/e/Code/Telegram/SellProjectBot/projects-api/admin/admin.py", line 233, in add_product
+    shutil.rmtree(f"projects/{project_id}/product")
+    │      └ <function rmtree at 0x7f9109bef0a0>
+    └ <module 'shutil' from '/usr/lib/python3.10/shutil.py'>
+
+  File "/usr/lib/python3.10/shutil.py", line 715, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+    │       │  │      │     │   └ <built-in function exc_info>
+    │       │  │      │     └ <module 'sys' (built-in)>
+    │       │  │      └ 'projects/a37031f0-0623-4ac8-b1e2-1fd59e161e06/product'
+    │       │  └ <built-in function lstat>
+    │       └ <module 'os' from '/usr/lib/python3.10/os.py'>
+    └ <function rmtree.<locals>.onerror at 0x7f9107327ac0>
+  File "/usr/lib/python3.10/shutil.py", line 713, in rmtree
+    orig_st = os.lstat(path)
+              │  │     └ 'projects/a37031f0-0623-4ac8-b1e2-1fd59e161e06/product'
+              │  └ <built-in function lstat>
+              └ <module 'os' from '/usr/lib/python3.10/os.py'>
+
+FileNotFoundError: [Errno 2] No such file or directory: 'projects/a37031f0-0623-4ac8-b1e2-1fd59e161e06/product'
+2024-01-15T16:35:36.115476+0500 INFO Get all projects.
+2024-01-15T16:35:36.122894+0500 INFO Get all projects.
+2024-01-15T16:35:37.376666+0500 INFO Get all projects.
+2024-01-15T16:35:37.500374+0500 INFO Get all projects.
+2024-01-15T16:35:39.964999+0500 INFO Start app
+2024-01-15T16:35:40.231392+0500 INFO Delete project a37031f0-0623-4ac8-b1e2-1fd59e161e06.
+2024-01-15T16:35:40.450204+0500 INFO Get all projects.
+2024-01-15T16:35:40.458038+0500 INFO Get all projects.
+2024-01-15T16:35:52.174661+0500 INFO Create new project with data name='asfaf' summary='adfa' price=123 have_presentation=False have_product=True have_unique=False category=3
+2024-01-15T16:35:52.181794+0500 INFO Get all projects.
+2024-01-15T16:35:52.249866+0500 INFO Get all projects.
+2024-01-15T16:35:52.372158+0500 INFO Add files to project c57276a5-0038-496e-be11-785817c244ac
+2024-01-15T16:35:54.934602+0500 INFO Get project c57276a5-0038-496e-be11-785817c244ac.
+2024-01-15T16:35:54.943572+0500 INFO Get project c57276a5-0038-496e-be11-785817c244ac.
+2024-01-15T16:35:56.156228+0500 INFO Return product zip for project c57276a5-0038-496e-be11-785817c244ac
+2024-01-15T16:36:03.077936+0500 INFO Update project with id c57276a5-0038-496e-be11-785817c244ac
+2024-01-15T16:36:08.062283+0500 INFO Change files to project c57276a5-0038-496e-be11-785817c244ac
+2024-01-15T16:36:08.285512+0500 INFO Get project c57276a5-0038-496e-be11-785817c244ac.
+2024-01-15T16:36:08.294898+0500 INFO Get project c57276a5-0038-496e-be11-785817c244ac.
+2024-01-15T16:36:11.297084+0500 INFO Return product zip for project c57276a5-0038-496e-be11-785817c244ac
+2024-01-15T16:36:18.526569+0500 INFO Return product zip for project c57276a5-0038-496e-be11-785817c244ac
+2024-01-15T16:36:37.988347+0500 INFO Delete project c57276a5-0038-496e-be11-785817c244ac.
+2024-01-15T16:36:38.032151+0500 INFO Get all projects.
+2024-01-15T16:36:38.104082+0500 INFO Get all projects.
+2024-01-15T16:36:38.355522+0500 INFO Get all projects.
+2024-01-15T16:36:38.362233+0500 INFO Get all projects.
+2024-01-15T16:36:41.331894+0500 INFO Get projects with type: full11
+2024-01-15T16:36:41.338690+0500 INFO Get projects with type: full11
+2024-01-15T16:36:41.595941+0500 INFO Get projects with type: full9
+2024-01-15T16:36:41.920978+0500 INFO Get projects with type: minimum
+2024-01-15T16:36:43.747436+0500 INFO Get projects with type: full11
+2024-01-15T16:36:43.754508+0500 INFO Get projects with type: full11
+2024-01-15T16:36:44.798172+0500 INFO Get all projects.
+2024-01-15T16:36:44.805786+0500 INFO Get all projects.
+2024-01-15T16:36:57.503554+0500 INFO Create new project with data name='adfadf' summary='adfadf' price=123 have_presentation=False have_product=False have_unique=False category=3
+2024-01-15T16:36:57.561758+0500 INFO Get all projects.
+2024-01-15T16:36:57.564765+0500 INFO Add files to project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:36:57.573287+0500 INFO Get all projects.
+2024-01-15T16:36:58.525535+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:36:58.533082+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:37:45.956483+0500 INFO Get all projects.
+2024-01-15T16:37:45.982130+0500 INFO Get all projects.
+2024-01-15T16:37:46.697614+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:37:46.705858+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:37:49.715875+0500 INFO Update project with id 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:38:04.472495+0500 INFO Get all projects.
+2024-01-15T16:38:04.486160+0500 INFO Get all projects.
+2024-01-15T16:38:05.165905+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:38:05.173806+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:38:07.463963+0500 INFO Update project with id 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:38:18.350288+0500 INFO Update project with id 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:38:18.678228+0500 INFO Change files to project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:38:18.891462+0500 INFO Get all projects.
+2024-01-15T16:38:18.903238+0500 INFO Get all projects.
+2024-01-15T16:38:32.507876+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:38:32.520257+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:38:35.483803+0500 INFO Update project with id 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:38:39.918735+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:38:39.931262+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:39:56.397400+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:39:56.406449+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:39:59.005957+0500 INFO Update project with id 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:39:59.220616+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:39:59.228870+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:40:04.501317+0500 INFO Update project with id 7b4610c9-541f-491a-bd6e-456d3ef7bb6a
+2024-01-15T16:40:04.711586+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:40:04.719535+0500 INFO Get project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:40:06.139282+0500 INFO Delete project 7b4610c9-541f-491a-bd6e-456d3ef7bb6a.
+2024-01-15T16:40:06.177583+0500 INFO Get all projects.
+2024-01-15T16:40:06.185462+0500 INFO Get all projects.
+2024-01-15T16:40:06.414228+0500 INFO Get all projects.
+2024-01-15T16:40:06.422330+0500 INFO Get all projects.
+2024-01-15T16:40:13.903506+0500 INFO Create new project with data name='asfasf' summary='asfasdf' price=123 have_presentation=False have_product=False have_unique=False category=3
+2024-01-15T16:40:13.910650+0500 INFO Get all projects.
+2024-01-15T16:40:13.965369+0500 INFO Get all projects.
+2024-01-15T16:40:14.022691+0500 INFO Add files to project 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:40:34.159562+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:40:34.166014+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:40:48.426364+0500 INFO Get all projects.
+2024-01-15T16:40:48.433711+0500 INFO Get all projects.
+2024-01-15T16:40:51.089384+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:40:51.096269+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:41:04.700577+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:41:04.708949+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:41:09.378545+0500 INFO Get all projects.
+2024-01-15T16:41:09.386664+0500 INFO Get all projects.
+2024-01-15T16:41:10.225451+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:41:10.233525+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:43:14.476200+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:43:14.483904+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:43:14.937307+0500 INFO Get all projects.
+2024-01-15T16:43:14.944680+0500 INFO Get all projects.
+2024-01-15T16:43:15.582182+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:43:15.590704+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:08.862156+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:44:09.132542+0500 INFO Get all projects.
+2024-01-15T16:44:09.140036+0500 INFO Get all projects.
+2024-01-15T16:44:10.602427+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:10.615551+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:32.706136+0500 INFO Get all projects.
+2024-01-15T16:44:32.714755+0500 INFO Get all projects.
+2024-01-15T16:44:36.446555+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:36.453829+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:39.745729+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:44:39.965785+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:39.974474+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:41.297499+0500 INFO Get all projects.
+2024-01-15T16:44:41.305986+0500 INFO Get all projects.
+2024-01-15T16:44:43.959080+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:44:43.966280+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:46:27.588412+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:46:27.805077+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:46:27.818693+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:46:29.782981+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:46:29.979418+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:46:29.987050+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:05.455068+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:47:05.824992+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:05.835178+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:07.378047+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:47:07.589998+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:07.597727+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:11.397765+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:47:11.596820+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:11.605961+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:30.960287+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:30.967943+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:37.984883+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:47:38.219730+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:47:38.226567+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:48:35.256892+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:48:35.265279+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:51:11.781529+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:51:11.790070+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:51:59.581737+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:51:59.589419+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:27.964695+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:27.973804+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:33.480230+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:53:33.685169+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:33.692782+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:36.260242+0500 INFO Get all projects.
+2024-01-15T16:53:36.266199+0500 INFO Get all projects.
+2024-01-15T16:53:37.382328+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:37.389724+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:40.782286+0500 INFO Update project with id 3be71dc0-6772-4824-8efc-5dc77801abba
+2024-01-15T16:53:41.000246+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:41.007962+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:41.657965+0500 INFO Get all projects.
+2024-01-15T16:53:41.664745+0500 INFO Get all projects.
+2024-01-15T16:53:43.216446+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:43.224163+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:48.187066+0500 INFO Get all projects.
+2024-01-15T16:53:48.194121+0500 INFO Get all projects.
+2024-01-15T16:53:57.682238+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:53:57.690866+0500 INFO Get project 3be71dc0-6772-4824-8efc-5dc77801abba.
+2024-01-15T16:54:03.913071+0500 INFO Get all projects.
+2024-01-15T16:54:03.920854+0500 INFO Get all projects.

@@ -11,10 +11,10 @@ from database import init_models
 
 def create_logger() -> None:
     logger.add(
-        "logs/debug.log",
+        "logs/debug.txt",
         format="{time} {level} {message}",
         level="INFO",
-        rotation="5 MB",
+        rotation="512 KB",
         compression="zip",
     )
     logger.info("Start app")

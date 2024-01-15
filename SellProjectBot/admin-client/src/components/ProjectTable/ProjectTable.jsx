@@ -46,56 +46,9 @@ function TbodyBool({ status }) {
   }
 }
 
-function ReturnChangeProject({ project_id, isModal, setModal }) {
-  const [project, setProject] = useState(null);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const projectData = await getProject(project_id);
-        setProject(projectData);
-      } catch (error) {
-        console.error("Error fetching project:", error);
-      }
-    };
-
-    fetchData();
-  }, [project_id]);
-
-  if (!project) {
-    return <div>Loading...</div>;
-  }
-
-  return (
-    <ModalProject
-      isVisible={isModal}
-      title={project.name}
-      content={<ChangeProject project={project} />}
-      footer={project.created_at}
-      onClose={() => setModal(false)}
-    />
-  );
-}
-
 function ActionButton({ project_id }) {
-  const [isModal, setModal] = React.useState(false);
-  const openModal = () => {
-    setModal(!isModal);
-  };
   return (
     <td className="px-6 py-4 whitespace-nowrap">
-      <button
-        onClick={openModal}
-        className="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out"
-      >
-        Изменить
-      </button>
-      {isModal && (
-        <ReturnChangeProject
-          project_id={project_id}
-          isModal={isModal}
-          setModal={setModal}
-        />
-      )}
       <button
         onClick={async () => {
           await deleteProject(project_id);

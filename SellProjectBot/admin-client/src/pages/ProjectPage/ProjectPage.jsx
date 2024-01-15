@@ -3,7 +3,9 @@ import ChangeProject from "../../components/ChangeProject/ChangeProject.jsx";
 import ModalProject from "../../components/ModalProject/ModalProject.jsx";
 import "./index.css";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { getProject, getFile } from "../../utils/getProjects.js";
+import { deleteProject } from "../../utils/deleteProject.js";
 
 function DownloadFile({ name, fileName, type, typeResponse, projectId }) {
   return (
@@ -43,6 +45,7 @@ function ListItem({ name, type }) {
 function ProjectPage() {
   const [isModal, setModal] = React.useState(false);
   const [project, setProject] = React.useState(null);
+  const navigate = useNavigate();
   const { id } = useParams();
   const files = [];
 
@@ -52,7 +55,7 @@ function ProjectPage() {
         data: {
           name: "Скачать документ",
           type: "doc",
-          fileName: "document.doc",
+          fileName: "document.docx",
           typeResponse: "application/msword",
         },
       });
@@ -124,13 +127,24 @@ function ProjectPage() {
         <ListItem type="Уникальность" name={project.have_unique.toString()} />
         <ListItem type="Дата создания" name={project.created_at} />
       </ul>
-      <button
-        onClick={() => setModal(true)}
-        className="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out"
-      >
-        Изменить
-      </button>
-
+      <div className="flex justify-between">
+        <button
+          onClick={() => setModal(true)}
+          className="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out"
+        >
+          Изменить
+        </button>
+        <button
+          onClick={async () => {
+            await deleteProject(id);
+            navigate("/");
+            window.location.reload();
+          }}
+          className="ml-1 px-4 py-2 font-medium text-white bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:shadow-outline-red active:bg-red-600 transition duration-150 ease-in-out"
+        >
+          Удалить
+        </button>
+      </div>
       {files.map((data, index) => {
         data = data.data;
         return (

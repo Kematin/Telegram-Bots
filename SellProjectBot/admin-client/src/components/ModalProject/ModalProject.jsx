@@ -17,7 +17,7 @@ function ModalProject({ isVisible = false, title, content, footer, onClose }) {
   });
 
   return !isVisible ? null : (
-    <div className="modal" onClick={onClose}>
+    <div className="modal">
       <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h3 className="modal-title">{title}</h3>

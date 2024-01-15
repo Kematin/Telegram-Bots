@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     CATEGORIES: dict = Field({"full11": 1, "full9": 2, "minimum": 3})
     FILE_TYPES: dict = Field(
         {
-            "doc": "document.doc",
+            "doc": "document.docx",
             "pptx": "presentation.pptx",
             "png": "unique.png",
             "product": "product",

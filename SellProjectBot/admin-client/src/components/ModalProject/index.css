@@ -17,7 +17,7 @@
 
 .modal-dialog {
   width: 100%;
-  max-width: 550px;
+  max-width: 650px;
   background-color: var(--dark);
   position: relative;
   margin: 0 20px;

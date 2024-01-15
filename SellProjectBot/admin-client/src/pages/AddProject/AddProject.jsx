@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { addProject } from "../../utils/addProject";
+import { addProject, addFiles } from "../../utils/addProject";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
 
@@ -30,13 +30,21 @@ function TextArea({ label, value, onChange }) {
   );
 }
 
-function UploadFile({ name, setFile, idSuffix }) {
-  const [fileSelected, setFileSelected] = useState(false);
+function UploadFile({ name, file, setFile, idSuffix }) {
   const inputId = `upload ${idSuffix}`;
-  const handleFileChange = (event) => {
-    setFileSelected(!!event.target.files.length);
-    setFile(!!event.target.files.length);
-  };
+  let handleFileChange = () => {};
+  if (inputId === "upload product") {
+    handleFileChange = (event) => {
+      const files = event.target.files;
+      setFile([...file, ...files]);
+    };
+  } else {
+    handleFileChange = (event) => {
+      const file = event.target.files[0];
+      setFile(file);
+    };
+  }
+
   return (
     <div className="rounded-md border-2 border-indigo-500 bg-transparent-50 p-4 shadow-md w-36">
       <label
@@ -56,15 +64,20 @@ function UploadFile({ name, setFile, idSuffix }) {
             d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
           />
         </svg>
-        <span className="label-text font-medium">
-          {fileSelected ? "✔️" : name}
-        </span>
+        {inputId === "upload product" ? (
+          <span className="label-text font-medium">
+            {file.length != 0 ? "✔️" : name}
+          </span>
+        ) : (
+          <span className="label-text font-medium">{file ? "✔️" : name}</span>
+        )}
       </label>
       <input
         id={inputId}
         type="file"
         className="hidden"
         onChange={handleFileChange}
+        multiple
       />
     </div>
   );
@@ -106,10 +119,10 @@ function AddProject() {
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("minimum");
 
-  const [haveDoc, setHaveDoc] = useState(false);
-  const [havePptx, setHavePptx] = useState(false);
-  const [haveUnique, setHaveUnique] = useState(false);
-  const [haveProduct, setHaveProduct] = useState(false);
+  const [docFile, setDocFile] = useState(null);
+  const [pptxFile, setPptxFile] = useState(null);
+  const [uniqueFile, setUniqueFile] = useState(null);
+  const [productFile, setProductFile] = useState([]);
 
   const navigate = useNavigate();
   const createProject = async (event) => {
@@ -119,13 +132,23 @@ function AddProject() {
       summary: summary,
       price: price,
       category: category,
-      have_presentation: havePptx,
-      have_unique: haveUnique,
-      have_product: haveProduct,
+      have_presentation: pptxFile ? true : false,
+      have_unique: uniqueFile ? true : false,
+      have_product: productFile.length != 0 ? true : false,
     };
-    const response = await addProject(data);
-    const new_id = await response.json();
-    console.log(new_id);
+    const files = {
+      doc_file: docFile,
+      pptx_file: pptxFile,
+      unique_file: uniqueFile,
+      product_files: productFile.length != 0 ? productFile : null,
+    };
+    const promise = addProject(data);
+    promise.then((response) => {
+      response.json().then((responseJson) => {
+        const new_id = responseJson.new_id;
+        addFiles(new_id, files);
+      });
+    });
     navigate("/");
   };
   return (
@@ -170,22 +193,26 @@ function AddProject() {
                 <UploadFile
                   name="Документ"
                   idSuffix="doc"
-                  setFile={setHaveDoc}
+                  file={docFile}
+                  setFile={setDocFile}
                 />
                 <UploadFile
                   name="Презентация"
                   idSuffix="pptx"
-                  setFile={setHavePptx}
+                  file={pptxFile}
+                  setFile={setPptxFile}
                 />
                 <UploadFile
                   name="Уникальность"
                   idSuffix="unique"
-                  setFile={setHaveUnique}
+                  file={uniqueFile}
+                  setFile={setUniqueFile}
                 />
                 <UploadFile
                   name="Продукт"
                   idSuffix="product"
-                  setFile={setHaveProduct}
+                  file={productFile}
+                  setFile={setProductFile}
                 />
               </div>
 

@@ -159,7 +159,7 @@ async def update_project(
 ):
     if data.category:
         if data.category not in config.CATEGORIES:
-            logger.warning(f"Invalid category for new project with data {data}")
+            logger.warning(f"Invalid category for project with data {data}")
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid category."
             )
@@ -185,7 +185,7 @@ async def delete_project(
     project_database = Database(Project, db)
     res = await project_database.delete(project_id)
     if res:
-        os.rmdir(f"projects/{project_id}")
+        shutil.rmtree(f"projects/{project_id}")
         logger.info(f"Delete project {project_id}.")
         return {"message": "successfull"}
     else:
@@ -212,8 +212,8 @@ async def delete_projects(db=Depends(get_db), admin: str = Depends(authenticate)
 @admin_router.get("/logs")
 @logger.catch(exclude=HTTPException)
 async def get_logs(admin: str = Depends(authenticate)):
-    log_file = "./logs/debug.log"
-    return FileResponse(path=log_file, filename="logs.log")
+    log_file = "./logs/debug.txt"
+    return FileResponse(path=log_file, filename="debug.txt")
 
 
 async def add_file(project_id: UUID4, file: UploadFile | None, name: str) -> None:
@@ -223,6 +223,7 @@ async def add_file(project_id: UUID4, file: UploadFile | None, name: str) -> Non
         with open(f"projects/{project_id}/" + name, "wb") as wf:
             shutil.copyfileobj(file.file, wf)
             file.file.close()
+        logger.debug(f"ADD {name}")
 
 
 async def add_product(project_id: UUID4, files: List[UploadFile] | None) -> None:
@@ -230,11 +231,13 @@ async def add_product(project_id: UUID4, files: List[UploadFile] | None) -> None
         return
     else:
         try:
-            os.mkdir(f"projects/{project_id}/product")
-        except FileExistsError:
+            shutil.rmtree(f"projects/{project_id}/product")
+        except FileNotFoundError:
             ...
-        for index, file in enumerate(files):
-            with open(f"projects/{project_id}/product/{index+1}.png", "wb") as wf:
+
+        os.mkdir(f"projects/{project_id}/product")
+        for file in files:
+            with open(f"projects/{project_id}/product/{file.filename}", "wb") as wf:
                 shutil.copyfileobj(file.file, wf)
                 file.file.close()
 
@@ -259,11 +262,39 @@ async def add_files(
             detail=f"Project with id {project_id} not found.",
         )
     else:
-        await add_file(project_id, doc_file, "document.doc")
+        await add_file(project_id, doc_file, "document.docx")
         await add_file(project_id, pptx_file, "presentation.pptx")
         await add_file(project_id, unique_file, "unique.png")
         await add_product(project_id, product_files)
         logger.info(f"Add files to project {project_id}")
+        return {"message": "successfull"}
+
+
+@admin_router.put("/files/{project_id}")
+@logger.catch(exclude=HTTPException)
+async def update_files(
+    project_id: UUID4,
+    doc_file: UploadFile | None = None,
+    pptx_file: UploadFile | None = None,
+    unique_file: UploadFile | None = None,
+    product_files: List[UploadFile] = Form([]),
+    db=Depends(get_db),
+    admin: str = Depends(authenticate),
+):
+    project_database = Database(Project, db)
+    project = await project_database.get(project_id)
+    if not project:
+        logger.warning(f"Project with id {project_id} not found.")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Project with id {project_id} not found.",
+        )
+    else:
+        await add_file(project_id, doc_file, "document.docx")
+        await add_file(project_id, pptx_file, "presentation.pptx")
+        await add_file(project_id, unique_file, "unique.png")
+        await add_product(project_id, product_files)
+        logger.info(f"Change files to project {project_id}")
         return {"message": "successfull"}
 
 
