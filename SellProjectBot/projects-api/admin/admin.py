@@ -9,7 +9,7 @@ from fastapi.responses import FileResponse, StreamingResponse
 from loguru import logger
 from pydantic import UUID4, BaseModel
 
-from admin.auth import authenticate, create_access_token
+from admin.auth import authenticate, create_access_token, verify_access_token
 from config import config
 from database import AsyncSessionLocal, Database, Project
 
@@ -82,6 +82,16 @@ async def auth_admin(data: AuthAdmin) -> dict:
     access_token = create_access_token(username)
     logger.info("Admin user sign in")
     return {"access_token": access_token, "token_type": "Bearer"}
+
+
+@admin_router.get("/check_token", status_code=status.HTTP_202_ACCEPTED)
+@logger.catch(exclude=HTTPException)
+async def check_token(token: str):
+    try:
+        verify_access_token(token)
+        return {"message": "succesfull"}
+    except HTTPException as e:
+        raise e
 
 
 @admin_router.get("/projects")
@@ -281,6 +291,7 @@ async def update_files(
     db=Depends(get_db),
     admin: str = Depends(authenticate),
 ):
+    logger.debug(f"{unique_file}, {pptx_file}, {product_files}")
     project_database = Database(Project, db)
     project = await project_database.get(project_id)
     if not project:

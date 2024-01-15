@@ -1,3 +1,5 @@
+import { getToken } from "./jwtToken";
+
 const categories = {
   1: "Full 11",
   2: "Full 9",
@@ -26,8 +28,12 @@ function changeCurrency(project) {
 }
 
 export async function getProjects() {
+  const token = await getToken();
+  const headers = { Authorization: `Bearer ${token}` };
   const url = "http://localhost:9999/admin/projects";
-  const response = await fetch(url);
+  const response = await fetch(url, {
+    headers: headers,
+  });
   const data = await response.json();
   data.projects.forEach((project) => {
     changeCategory(project);
@@ -39,8 +45,12 @@ export async function getProjects() {
 }
 
 export async function getProjectsCategory(category) {
+  const token = await getToken();
+  const headers = { Authorization: `Bearer ${token}` };
   const url = `http://localhost:9999/admin/projects?category=${category}`;
-  const response = await fetch(url);
+  const response = await fetch(url, {
+    headers: headers,
+  });
   const data = await response.json();
   data.projects.forEach((project) => {
     changeCategory(project);
@@ -52,8 +62,12 @@ export async function getProjectsCategory(category) {
 }
 
 export async function getProject(project_id) {
+  const token = await getToken();
+  const headers = { Authorization: `Bearer ${token}` };
   const url = `http://localhost:9999/admin/project/${project_id}`;
-  const response = await fetch(url);
+  const response = await fetch(url, {
+    headers: headers,
+  });
   const data = await response.json();
   changeCategory(data.project);
   changeDatetime(data.project);
@@ -63,8 +77,12 @@ export async function getProject(project_id) {
 }
 
 export function getFile(fileName, type, typeResponse, projectId) {
-  fetch(`http://localhost:9999/admin/files/${projectId}?type=${type}`).then(
-    (response) => {
+  let headers = { Authorization: "" };
+  getToken().then((token) => {
+    headers.Authorization = `Bearer ${token}`;
+    fetch(`http://localhost:9999/admin/files/${projectId}?type=${type}`, {
+      headers: headers,
+    }).then((response) => {
       response.arrayBuffer().then((buffer) => {
         const link = document.createElement("a");
         link.download = fileName;
@@ -75,6 +93,6 @@ export function getFile(fileName, type, typeResponse, projectId) {
         link.click();
         URL.revokeObjectURL(link.href);
       });
-    }
-  );
+    });
+  });
 }

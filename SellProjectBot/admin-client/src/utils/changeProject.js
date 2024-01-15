@@ -1,66 +1,88 @@
+import { getToken } from "./jwtToken";
+
 export function changeProject(data, projectId) {
-  try {
-    const response = fetch(`http://localhost:9999/admin/project/${projectId}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }).then((response) => {
+  let headers = {
+    Authorization: "",
+    "Content-Type": "application/json",
+  };
+  const response = getToken().then((token) => {
+    headers.Authorization = `Bearer ${token}`;
+    try {
+      const response = fetch(
+        `http://localhost:9999/admin/project/${projectId}`,
+        {
+          method: "PUT",
+          headers: headers,
+          body: JSON.stringify(data),
+        }
+      ).then((response) => {
+        return response;
+      });
       return response;
-    });
-    return response;
-  } catch (error) {
-    console.error("Error updating project:", error);
-    throw error;
-  }
+    } catch (error) {
+      console.error("Error updating project:", error);
+      throw error;
+    }
+  });
+  return response;
 }
 
-export function changeFiles(projectId, files) {
-  const apiUrl = `http://localhost:9999/admin/files/${projectId}`;
-  let response = Promise;
+export async function changeFiles(projectId, files) {
+  const token = await getToken();
+  let headers = {
+    Authorization: `Bearer ${token}`,
+  };
 
+  const apiUrl = `http://localhost:9999/admin/files/${projectId}`;
   const data = new FormData();
-  let count = 0;
+
   if (files.doc_file && files.doc_file !== "HAVE") {
     data.append("doc_file", files.doc_file);
-  } else {
-    count++;
   }
+
   if (files.pptx_file && files.pptx_file !== "HAVE") {
     data.append("pptx_file", files.pptx_file);
-  } else {
-    count++;
   }
+
   if (files.unique_file && files.unique_file !== "HAVE") {
+    console.log("ADD UNIQUE");
     data.append("unique_file", files.unique_file);
-  } else {
-    count++;
   }
 
   if (files.product_files && files.product_files !== "HAVE") {
+    console.log("ADD PRODUCT");
     files.product_files.forEach((productFile) => {
-      data.append(`product_files`, productFile);
+      data.append("product_files", productFile);
     });
-  } else {
-    count++;
   }
 
-  if (count !== 4) {
+  console.log(data);
+  console.log(files);
+
+  if (
+    data.has("doc_file") ||
+    data.has("pptx_file") ||
+    data.has("unique_file") ||
+    data.has("product_files")
+  ) {
     console.log("CHANGE PROJECT FILES");
-    response = fetch(apiUrl, {
-      method: "PUT",
-      body: data,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-        return data;
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        return error;
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: "PUT",
+        body: data,
+        headers: headers,
       });
+
+      const responseData = await response.json();
+      console.log("Success:", responseData);
+      return responseData;
+    } catch (error) {
+      console.error("Error:", error);
+      return error;
+    }
+  } else {
+    console.log("No files to change");
+    return null;
   }
-  return response;
 }

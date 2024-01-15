@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { addProject, addFiles } from "../../utils/addProject";
 import { useNavigate } from "react-router-dom";
+import { getToken } from "../../utils/jwtToken";
 import "./index.css";
 
 function InputField({ label, value, onChange }) {
@@ -124,6 +125,13 @@ function AddProject() {
   const [uniqueFile, setUniqueFile] = useState(null);
   const [productFile, setProductFile] = useState([]);
 
+  useEffect(() => {
+    async function getT() {
+      await getToken();
+    }
+    getT();
+  }, []);
+
   const navigate = useNavigate();
   const createProject = async (event) => {
     event.preventDefault();
@@ -146,10 +154,11 @@ function AddProject() {
     promise.then((response) => {
       response.json().then((responseJson) => {
         const new_id = responseJson.new_id;
-        addFiles(new_id, files);
+        addFiles(new_id, files).then(() => {
+          navigate("/");
+        });
       });
     });
-    navigate("/");
   };
   return (
     <div id="add-project-page">
