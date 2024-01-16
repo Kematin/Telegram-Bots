@@ -222,7 +222,7 @@ async def delete_projects(db=Depends(get_db), admin: str = Depends(authenticate)
 @admin_router.get("/logs")
 @logger.catch(exclude=HTTPException)
 async def get_logs(admin: str = Depends(authenticate)):
-    log_file = "./logs/debug.txt"
+    log_file = "./logs/debug.log"
     return FileResponse(path=log_file, filename="debug.txt")
 
 

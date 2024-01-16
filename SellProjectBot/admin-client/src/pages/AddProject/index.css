@@ -5,6 +5,8 @@
 }
 #add-project-page form {
   margin: 30px;
+  min-width: 10%;
+  max-width: 200%;
 }
 .label-text {
   color: var(--milk);
@@ -69,4 +71,3 @@
 .form-border {
   border: 2px solid var(--accent);
 }
-

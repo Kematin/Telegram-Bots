@@ -14,16 +14,18 @@ function App() {
     <div id="app">
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Projects />} />
-          <Route path="/add" element={<AddProject />} />
-          <Route path="/logs" element={<Logs />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/undefined" element={<Undefined />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
-          <Route path="/:category" element={<ProjectCatergory />} />
-          <Route path="*" element={<Undefined />} />
-        </Routes>
+        <div className="routes">
+          <Routes>
+            <Route path="/" element={<Projects />} />
+            <Route path="/add" element={<AddProject />} />
+            <Route path="/logs" element={<Logs />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/undefined" element={<Undefined />} />
+            <Route path="/project/:id" element={<ProjectPage />} />
+            <Route path="/:category" element={<ProjectCatergory />} />
+            <Route path="*" element={<Undefined />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
