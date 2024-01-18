@@ -74,7 +74,7 @@ async def handle_send_project(
 
     await bot.send_message(
         callback_query.from_user.id,
-        project.name,
+        descriptions.get_project_description(project),
         reply_markup=keyboards.interactive_keyboard(index, size, category),
     )
 
@@ -85,7 +85,7 @@ async def handle_edit_project(
     project, size = await get_project_and_size(url, index)
 
     await bot.edit_message_text(
-        project.name,
+        descriptions.get_project_description(project),
         message_id=callback_query.message.message_id,
         chat_id=callback_query.message.chat.id,
         reply_markup=keyboards.interactive_keyboard(index, size, category),

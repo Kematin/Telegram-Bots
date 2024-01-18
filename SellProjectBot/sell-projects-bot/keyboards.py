@@ -59,7 +59,7 @@ def interactive_keyboard(
 def get_return_to_start() -> InlineKeyboardMarkup:
     buttons = [
         [
-            InlineKeyboardButton(text="Вернуться", callback_data="buy_projects"),
+            InlineKeyboardButton(text="Вернуться", callback_data="start"),
         ],
     ]
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
