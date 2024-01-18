@@ -59,6 +59,14 @@ function ProjectPage() {
           typeResponse: "application/msword",
         },
       });
+      files.push({
+        data: {
+          name: "Скачать обложку",
+          type: "cover",
+          fileName: "cover.png",
+          typeResponse: "image/png",
+        },
+      });
       if (project.have_unique) {
         files.push({
           data: {

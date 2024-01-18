@@ -4,6 +4,7 @@ const categories = {
   1: "Full 11",
   2: "Full 9",
   3: "Minimum",
+  4: "Exclusive",
 };
 const options = {
   year: "numeric",

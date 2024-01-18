@@ -125,6 +125,7 @@ function ChangeProject({ project }) {
   const [isBlocked, setIsBlocked] = useState(project.is_blocked);
 
   const [docFile, setDocFile] = useState("HAVE");
+  const [coverFile, setCoverFile] = useState("HAVE");
   const [pptxFile, setPptxFile] = useState(null);
   const [uniqueFile, setUniqueFile] = useState(null);
   const [productFile, setProductFile] = useState([]);
@@ -154,6 +155,7 @@ function ChangeProject({ project }) {
     };
     const files = {
       doc_file: docFile,
+      cover_file: coverFile,
       pptx_file: pptxFile,
       unique_file: uniqueFile,
       product_files: productFile.length != 0 ? productFile : null,
@@ -201,7 +203,7 @@ function ChangeProject({ project }) {
             />
             <SelectFromListInput
               label="Категория"
-              options={["minimum", "full11", "full9"]}
+              options={["minimum", "full11", "full9", "exclusive"]}
               onChange={(selectedValue) => {
                 setCategory(selectedValue);
               }}
@@ -214,6 +216,14 @@ function ChangeProject({ project }) {
                 file={docFile}
                 setFile={setDocFile}
               />
+              <UploadFile
+                name="Обложка"
+                idSuffix="cover"
+                file={coverFile}
+                setFile={setCoverFile}
+              />
+            </div>
+            <div className="flex files-combo">
               <UploadFile
                 name="Уникальность"
                 idSuffix="unique"

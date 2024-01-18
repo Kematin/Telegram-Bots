@@ -1,3 +1,4 @@
+__pycache__
 database/store.db
 projects/*
 !/projects/init.prod

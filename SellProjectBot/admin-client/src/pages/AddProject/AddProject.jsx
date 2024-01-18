@@ -121,6 +121,7 @@ function AddProject() {
   const [category, setCategory] = useState("minimum");
 
   const [docFile, setDocFile] = useState(null);
+  const [coverFile, setCoverFile] = useState(null);
   const [pptxFile, setPptxFile] = useState(null);
   const [uniqueFile, setUniqueFile] = useState(null);
   const [productFile, setProductFile] = useState([]);
@@ -146,6 +147,7 @@ function AddProject() {
     };
     const files = {
       doc_file: docFile,
+      cover_file: coverFile,
       pptx_file: pptxFile,
       unique_file: uniqueFile,
       product_files: productFile.length != 0 ? productFile : null,
@@ -192,7 +194,7 @@ function AddProject() {
               />
               <SelectFromListInput
                 label="Категория"
-                options={["minimum", "full11", "full9"]}
+                options={["minimum", "full11", "full9", "exclusive"]}
                 onChange={(selectedValue) => {
                   setCategory(selectedValue);
                 }}
@@ -204,6 +206,12 @@ function AddProject() {
                   idSuffix="doc"
                   file={docFile}
                   setFile={setDocFile}
+                />
+                <UploadFile
+                  name="Обложка"
+                  idSuffix="cover"
+                  file={coverFile}
+                  setFile={setCoverFile}
                 />
                 <UploadFile
                   name="Презентация"

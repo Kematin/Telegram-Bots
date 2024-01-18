@@ -39,6 +39,9 @@ export async function changeFiles(projectId, files) {
   if (files.doc_file && files.doc_file !== "HAVE") {
     data.append("doc_file", files.doc_file);
   }
+  if (files.cover_file && files.cover_file !== "HAVE") {
+    data.append("cover_file", files.cover_file);
+  }
 
   if (files.pptx_file && files.pptx_file !== "HAVE") {
     data.append("pptx_file", files.pptx_file);
@@ -56,12 +59,10 @@ export async function changeFiles(projectId, files) {
     });
   }
 
-  console.log(data);
-  console.log(files);
-
   if (
     data.has("doc_file") ||
     data.has("pptx_file") ||
+    data.has("cover_file") ||
     data.has("unique_file") ||
     data.has("product_files")
   ) {
@@ -82,7 +83,6 @@ export async function changeFiles(projectId, files) {
       return error;
     }
   } else {
-    console.log("No files to change");
     return null;
   }
 }

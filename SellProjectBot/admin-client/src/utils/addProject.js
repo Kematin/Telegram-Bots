@@ -28,6 +28,7 @@ export function addFiles(projectId, files) {
     const data = new FormData();
 
     data.append("doc_file", files.doc_file);
+    data.append("cover_file", files.cover_file);
     if (files.pptx_file) {
       data.append("pptx_file", files.pptx_file);
     }

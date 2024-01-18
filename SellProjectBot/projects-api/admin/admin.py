@@ -257,6 +257,7 @@ async def add_product(project_id: UUID4, files: List[UploadFile] | None) -> None
 async def add_files(
     project_id: UUID4,
     doc_file: UploadFile,
+    cover_file: UploadFile,
     pptx_file: UploadFile | None = None,
     unique_file: UploadFile | None = None,
     product_files: List[UploadFile] = Form([]),
@@ -273,6 +274,7 @@ async def add_files(
         )
     else:
         await add_file(project_id, doc_file, "document.docx")
+        await add_file(project_id, cover_file, "cover.png")
         await add_file(project_id, pptx_file, "presentation.pptx")
         await add_file(project_id, unique_file, "unique.png")
         await add_product(project_id, product_files)
@@ -285,13 +287,13 @@ async def add_files(
 async def update_files(
     project_id: UUID4,
     doc_file: UploadFile | None = None,
+    cover_file: UploadFile | None = None,
     pptx_file: UploadFile | None = None,
     unique_file: UploadFile | None = None,
     product_files: List[UploadFile] = Form([]),
     db=Depends(get_db),
     admin: str = Depends(authenticate),
 ):
-    logger.debug(f"{unique_file}, {pptx_file}, {product_files}")
     project_database = Database(Project, db)
     project = await project_database.get(project_id)
     if not project:
@@ -302,6 +304,7 @@ async def update_files(
         )
     else:
         await add_file(project_id, doc_file, "document.docx")
+        await add_file(project_id, cover_file, "cover.png")
         await add_file(project_id, pptx_file, "presentation.pptx")
         await add_file(project_id, unique_file, "unique.png")
         await add_product(project_id, product_files)
@@ -329,7 +332,7 @@ async def retrieve_project_file(
             detail="Specified file type is not valid",
         )
     media_type = config.MEDIA_TYPES[type]
-    if type != "doc":
+    if type != "doc" and type != "cover":
         if not project.__dict__[config.PROJECT_FIELDS[type]]:
             logger.warning(f"No {type} for project {project_id}")
             raise HTTPException(

@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from loguru import logger
 
 from admin.admin import admin_router
+from bot.bot import bot_router
 from database import init_models
 
 
@@ -29,6 +30,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 app.include_router(admin_router, prefix="/admin")
+app.include_router(bot_router, prefix="/bot")
 
 origins = ["*"]
 app.add_middleware(
