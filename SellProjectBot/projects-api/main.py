@@ -32,7 +32,7 @@ app = FastAPI(lifespan=lifespan)
 app.include_router(admin_router, prefix="/admin")
 app.include_router(bot_router, prefix="/bot")
 
-origins = ["*"]
+origins = ["http://localhost:8080/", "http://localhost:3939/"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,

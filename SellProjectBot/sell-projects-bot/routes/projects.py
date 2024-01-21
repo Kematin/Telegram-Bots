@@ -3,11 +3,12 @@ from typing import Any, List
 
 import aiohttp
 from aiogram import Router
-from aiogram.types import CallbackQuery
-from aiogram.types.input_file import FSInputFile
+from aiogram.types import CallbackQuery, InputMediaPhoto
+from aiogram.types.input_file import BufferedInputFile, FSInputFile
 
 import descriptions
 import keyboards
+from config import config
 from create_bot import bot
 
 project_router = Router()
@@ -38,14 +39,25 @@ class Projects:
     projects: List[Project]
 
 
-async def request_json(url) -> Any:
+async def request_json(url: str) -> Any:
+    headers = {"Authorization": f"{config.SECRET_KEY}"}
     async with aiohttp.ClientSession() as session:
-        async with session.get(url) as response:
+        async with session.get(url, headers=headers) as response:
             return await response.json()
 
 
-async def request_file(url):
-    pass
+async def request_file(project_id: str, type: str) -> bytes:
+    headers = {"Authorization": f"{config.SECRET_KEY}"}
+    async with aiohttp.ClientSession() as session:
+        async with session.get(
+            REQUEST_URL + f"files/{project_id}?type={type}", headers=headers
+        ) as response:
+            if response.status == 200:
+                return await response.read()
+            else:
+                raise ValueError(
+                    f"Failed to retrieve file. Status code: {response.status}"
+                )
 
 
 def get_index(user_id: int, db: dict) -> int:
@@ -71,11 +83,14 @@ async def handle_send_project(
     callback_query: CallbackQuery, url: str, index: int, category: str
 ) -> None:
     project, size = await get_project_and_size(url, index)
+    cover_bytes = await request_file(project.id, "cover")
+    cover = BufferedInputFile(cover_bytes, filename="cover.png")
 
-    await bot.send_message(
-        callback_query.from_user.id,
-        descriptions.get_project_description(project),
-        reply_markup=keyboards.interactive_keyboard(index, size, category),
+    await bot.send_photo(
+        chat_id=callback_query.from_user.id,
+        photo=cover,
+        caption=descriptions.get_project_description(project),
+        reply_markup=keyboards.interactive_keyboard(index, project.id, size, category),
     )
 
 
@@ -83,12 +98,16 @@ async def handle_edit_project(
     callback_query: CallbackQuery, url: str, index: int, category: str
 ) -> None:
     project, size = await get_project_and_size(url, index)
+    cover_bytes = await request_file(project.id, "cover")
+    cover = BufferedInputFile(cover_bytes, filename="cover.png")
 
-    await bot.edit_message_text(
-        descriptions.get_project_description(project),
-        message_id=callback_query.message.message_id,
+    await bot.edit_message_media(
         chat_id=callback_query.message.chat.id,
-        reply_markup=keyboards.interactive_keyboard(index, size, category),
+        message_id=callback_query.message.message_id,
+        media=InputMediaPhoto(
+            media=cover, caption=descriptions.get_project_description(project)
+        ),
+        reply_markup=keyboards.interactive_keyboard(index, project.id, size, category),
     )
 
 
@@ -100,7 +119,7 @@ async def handle_edit_project(
 # -----------------------------------------------------------------
 
 
-@project_router.callback_query(lambda c: c.data == "buy_projects")
+@project_router.callback_query(lambda c: c.data == "get_all_projects")
 async def about_callback(callback_query: CallbackQuery):
     img_url = "./static/price_list.jpeg"
 

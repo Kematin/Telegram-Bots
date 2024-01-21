@@ -106,7 +106,7 @@ async def retrieve_project_file(
             detail="Specified file type is not valid",
         )
     media_type = config.MEDIA_TYPES[type]
-    if type != "doc":
+    if type != "doc" and type != "cover":
         if not project.__dict__[config.PROJECT_FIELDS[type]]:
             logger.warning(f"No {type} for project {project_id} (FOR BOT)")
             raise HTTPException(

@@ -22,18 +22,31 @@ START = "СТАРТ"
 FEEDBACK = "ОТЗЫВЫ"
 
 BUY_PROJECTS = "КУПИТЬ ПРОЕКТЫ"
+BUY_PROJECT = "спспспс за покупку"
 
 
-def get_project_description(project: Project):
+def get_project_description(project: Project) -> str:
     have = {1: "✔️", 0: "✖️"}
 
     desc = (
         f"НАЗВАНИЕ: {project.name}"
         + f"\nКРАТКОЕ СОДЕРЖАНИЕ: {project.summary}"
-        + f"\nЦЕНА: {project.price}"
+        + f"\nЦЕНА: {project.price} ₽"
         + f"\nКАТЕГОРИЯ: {config.CATEGORIES[project.category]}"
         + f"\nПРЕЗЕНТАЦИЯ: {have[project.have_presentation]}"
         + f"\nПРОДУКТ: {have[project.have_product]}"
         + f"\nУНИКАЛЬНОСТЬ: {have[project.have_unique]}"
     )
     return desc
+
+
+def get_project_description_for_admin(
+    project: Project, buy_time: str, buyer: str
+) -> str:
+    project_desc = get_project_description(project)
+    return (
+        f"Был куплен проект с ID:\n{project.id}"
+        + f"\n\nОписание проекта:\n{project_desc}"
+        + f"\n\nБыл куплен:\n{buy_time}"
+        + f"\n\nПокупатель:\n{buyer}"
+    )

@@ -27,7 +27,7 @@ def buy_project_keyboard() -> InlineKeyboardMarkup:
 def start_keyboard() -> InlineKeyboardMarkup:
     buttons = [
         [
-            InlineKeyboardButton(text="Купить", callback_data="buy_projects"),
+            InlineKeyboardButton(text="Купить", callback_data="get_all_projects"),
         ],
         [
             InlineKeyboardButton(text="О нас", callback_data="about"),
@@ -40,19 +40,25 @@ def start_keyboard() -> InlineKeyboardMarkup:
 
 
 def interactive_keyboard(
-    index: int, project_size: int, category: str
+    index: int, project_id: int, project_size: int, category: str
 ) -> InlineKeyboardMarkup:
     keyboard = InlineKeyboardBuilder()
+    keyboard.row(
+        InlineKeyboardButton(text="Купить", callback_data=f"buy_project_{project_id}"),
+        width=1,
+    )
+    second_row_buttons = list()
     if index > 0:
-        keyboard.add(
+        second_row_buttons.append(
             InlineKeyboardButton(text="️⬅⬅⬅", callback_data=f"prev_project_{category}")
         )
 
     if index < project_size - 1:
-        keyboard.add(
+        second_row_buttons.append(
             InlineKeyboardButton(text="️➡➡➡", callback_data=f"next_project_{category}")
         )
 
+    keyboard.row(*second_row_buttons, width=2)
     return keyboard.as_markup()
 
 
