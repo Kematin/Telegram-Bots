@@ -3,3 +3,4 @@ database/store.db
 projects/*
 !/projects/init.prod
 logs/*.log
+logs/*.log.zip

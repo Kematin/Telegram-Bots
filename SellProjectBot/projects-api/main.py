@@ -15,7 +15,7 @@ def create_logger() -> None:
         "logs/debug.log",
         format="{time} {level} {message}",
         level="INFO",
-        rotation="250 KB",
+        rotation="150 KB",
         compression="zip",
     )
     logger.info("Start app")
@@ -32,7 +32,7 @@ app = FastAPI(lifespan=lifespan)
 app.include_router(admin_router, prefix="/admin")
 app.include_router(bot_router, prefix="/bot")
 
-origins = ["http://localhost:8080/", "http://localhost:3939/"]
+origins = ["http://localhost:8080", "http://localhost:3939"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,

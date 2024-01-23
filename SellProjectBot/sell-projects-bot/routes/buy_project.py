@@ -4,9 +4,9 @@ from typing import Any
 
 import aiohttp
 from aiogram import F, Router
+from aiogram.enums.parse_mode import ParseMode
 from aiogram.types import (
     CallbackQuery,
-    ContentType,
     InputMediaDocument,
     LabeledPrice,
     Message,
@@ -19,6 +19,7 @@ from config import config
 from create_bot import bot
 
 buy_project_router = Router()
+html = ParseMode.HTML
 REQUEST_URL = "http://localhost:9999/bot/"
 
 
@@ -37,14 +38,14 @@ class Project:
 
 
 async def request_json(url: str) -> Any:
-    headers = {"Authorization": f"{config.SECRET_KEY}"}
+    headers = {"Authorization": f"Bearer {config.SECRET_KEY}"}
     async with aiohttp.ClientSession() as session:
         async with session.get(url, headers=headers) as response:
             return await response.json()
 
 
 async def request_file(project_id: str, type: str) -> bytes:
-    headers = {"Authorization": f"{config.SECRET_KEY}"}
+    headers = {"Authorization": f"Bearer {config.SECRET_KEY}"}
     async with aiohttp.ClientSession() as session:
         async with session.get(
             REQUEST_URL + f"files/{project_id}?type={type}", headers=headers
@@ -58,8 +59,12 @@ async def request_file(project_id: str, type: str) -> bytes:
 
 
 async def block_project(project_id: str):
-    headers = {"Authorization": f"{config.SECRET_KEY}"}
-    pass
+    url = f"http://localhost:9999/bot/project/{project_id}?is_blocked=true"
+    headers = {"Authorization": f"Bearer {config.SECRET_KEY}"}
+
+    async with aiohttp.ClientSession() as session:
+        async with session.post(url, headers=headers):
+            pass
 
 
 async def handle_buy_project(message: Message, project: Project):
@@ -81,7 +86,9 @@ async def handle_buy_project(message: Message, project: Project):
             files.append(file)
         except ValueError:
             pass
-    await bot.send_message(message.from_user.id, descriptions.BUY_PROJECT)
+    await bot.send_message(
+        message.from_user.id, descriptions.BUY_PROJECT, parse_mode=html
+    )
     await bot.send_media_group(
         chat_id=message.from_user.id,
         media=files,
@@ -91,7 +98,9 @@ async def handle_buy_project(message: Message, project: Project):
         descriptions.get_project_description_for_admin(
             project, buy_time=datetime.now(), buyer=message.from_user.username
         ),
+        parse_mode=html,
     )
+    await block_project(project.id)
 
 
 @buy_project_router.callback_query(lambda c: c.data.startswith("buy_project_"))
@@ -112,6 +121,7 @@ async def buy_project(callback_query: CallbackQuery):
         provider_data=None,
         request_timeout=15,
     )
+    await handle_buy_project(callback_query, project)
 
 
 @buy_project_router.pre_checkout_query(lambda q: True)

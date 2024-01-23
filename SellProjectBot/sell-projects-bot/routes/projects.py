@@ -1,9 +1,11 @@
+from asyncio import sleep
 from dataclasses import dataclass
 from typing import Any, List
 
 import aiohttp
 from aiogram import Router
-from aiogram.types import CallbackQuery, InputMediaPhoto
+from aiogram.enums.parse_mode import ParseMode
+from aiogram.types import CallbackQuery
 from aiogram.types.input_file import BufferedInputFile, FSInputFile
 
 import descriptions
@@ -12,6 +14,7 @@ from config import config
 from create_bot import bot
 
 project_router = Router()
+html = ParseMode.HTML
 REQUEST_URL = "http://localhost:9999/bot/"
 PROJECT_INDEX_ALL = {}
 PROJECT_INDEX_FULL11 = {}
@@ -40,14 +43,14 @@ class Projects:
 
 
 async def request_json(url: str) -> Any:
-    headers = {"Authorization": f"{config.SECRET_KEY}"}
+    headers = {"Authorization": f"Bearer {config.SECRET_KEY}"}
     async with aiohttp.ClientSession() as session:
         async with session.get(url, headers=headers) as response:
             return await response.json()
 
 
 async def request_file(project_id: str, type: str) -> bytes:
-    headers = {"Authorization": f"{config.SECRET_KEY}"}
+    headers = {"Authorization": f"Bearer {config.SECRET_KEY}"}
     async with aiohttp.ClientSession() as session:
         async with session.get(
             REQUEST_URL + f"files/{project_id}?type={type}", headers=headers
@@ -91,24 +94,21 @@ async def handle_send_project(
         photo=cover,
         caption=descriptions.get_project_description(project),
         reply_markup=keyboards.interactive_keyboard(index, project.id, size, category),
+        parse_mode=html,
     )
 
 
 async def handle_edit_project(
     callback_query: CallbackQuery, url: str, index: int, category: str
 ) -> None:
-    project, size = await get_project_and_size(url, index)
-    cover_bytes = await request_file(project.id, "cover")
-    cover = BufferedInputFile(cover_bytes, filename="cover.png")
-
-    await bot.edit_message_media(
+    await bot.delete_message(
         chat_id=callback_query.message.chat.id,
         message_id=callback_query.message.message_id,
-        media=InputMediaPhoto(
-            media=cover, caption=descriptions.get_project_description(project)
-        ),
-        reply_markup=keyboards.interactive_keyboard(index, project.id, size, category),
     )
+
+    sleep(2)
+
+    await handle_send_project(callback_query, url, index, category)
 
 
 # -----------------------------------------------------------------
@@ -129,6 +129,7 @@ async def about_callback(callback_query: CallbackQuery):
         photo=input_photo,
         caption=descriptions.BUY_PROJECTS,
         reply_markup=keyboards.buy_project_keyboard(),
+        parse_mode=html,
     )
 
 
@@ -151,7 +152,7 @@ async def get_all_projects(callback_query: CallbackQuery):
         await bot.send_message(
             callback_query.from_user.id,
             "Нет доступных проектов :(",
-            reply_markup=keyboards.get_return_to_start(),
+            reply_markup=keyboards.return_to_start(),
         )
 
 
@@ -194,7 +195,7 @@ async def get_full_11_projects(callback_query: CallbackQuery):
         await bot.send_message(
             callback_query.from_user.id,
             "Нет доступных проектов :(",
-            reply_markup=keyboards.get_return_to_start(),
+            reply_markup=keyboards.return_to_start(),
         )
 
 
@@ -237,7 +238,7 @@ async def get_full9_project(callback_query: CallbackQuery):
         await bot.send_message(
             callback_query.from_user.id,
             "Нет доступных проектов :(",
-            reply_markup=keyboards.get_return_to_start(),
+            reply_markup=keyboards.return_to_start(),
         )
 
 
@@ -280,7 +281,7 @@ async def get_min_project(callback_query: CallbackQuery):
         await bot.send_message(
             callback_query.from_user.id,
             "Нет доступных проектов :(",
-            reply_markup=keyboards.get_return_to_start(),
+            reply_markup=keyboards.return_to_start(),
         )
 
 
@@ -323,7 +324,7 @@ async def get_exclusive_project(callback_query: CallbackQuery):
         await bot.send_message(
             callback_query.from_user.id,
             "Нет доступных проектов :(",
-            reply_markup=keyboards.get_return_to_start(),
+            reply_markup=keyboards.return_to_start(),
         )
 
 
