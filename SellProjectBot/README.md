@@ -41,9 +41,13 @@ DATABASE_URL="sqlite+aiosqlite:///./database/db.db"
 BOT_SECRET_KEY="secret key"
 ```
 *ADMIN_USERNAME*: Ваше имя админа
+
 *ADMIN_PASSWORD*: Ваш пароль админа
+
 *JWT_SECRET_KEY*: Секретный ключ для шифрования jwt токена
+
 *DATABASE_URL*: Ссылка на реляционную базу данных
+
 *BOT_SECRET_KEY*: Секретный ключ для подлинности запросов бота
 
 Сборка:
@@ -84,8 +88,11 @@ ADMIN_IP=111111
 PROVIDER_TOKEN=""
 ```
 *BOT_TOKEN*: Токен телеграм бота (BotFather)
+
 *SECRET_KEY* = *BOT_SECRET_KEY* (API)
+
 *ADMIN_IP*: ip телеграма админа (для оправки информации о купленных товарах)
+
 *PROVIDER_TOKEN*: Токен провайдера платежей
 
 Сборка:
