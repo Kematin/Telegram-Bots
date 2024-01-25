@@ -3,6 +3,7 @@ from datetime import datetime
 from typing import Any
 
 import aiohttp
+import descriptions
 from aiogram import F, Router
 from aiogram.enums.parse_mode import ParseMode
 from aiogram.types import (
@@ -13,8 +14,6 @@ from aiogram.types import (
     PreCheckoutQuery,
 )
 from aiogram.types.input_file import BufferedInputFile
-
-import descriptions
 from config import config
 from create_bot import bot
 
@@ -113,7 +112,7 @@ async def buy_project(callback_query: CallbackQuery):
         title=f"⭐ {project.name} ⭐",
         description=project.summary,
         payload=project.id,
-        provider_token="381764678:TEST:76090",
+        provider_token=config.PROVIDER_TOKEN,
         currency="rub",
         prices=[LabeledPrice(label="Проект", amount=project.price * 100)],
         max_tip_amount=100000,
@@ -121,7 +120,6 @@ async def buy_project(callback_query: CallbackQuery):
         provider_data=None,
         request_timeout=15,
     )
-    await handle_buy_project(callback_query, project)
 
 
 @buy_project_router.pre_checkout_query(lambda q: True)

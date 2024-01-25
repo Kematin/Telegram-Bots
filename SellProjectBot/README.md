@@ -86,6 +86,7 @@ BOT_TOKEN=""
 SECRET_KEY=""
 ADMIN_IP=111111
 PROVIDER_TOKEN=""
+WEBHOOCK_NGROK=""
 ```
 *BOT_TOKEN*: Токен телеграм бота (BotFather)
 
@@ -94,6 +95,8 @@ PROVIDER_TOKEN=""
 *ADMIN_IP*: ip телеграма админа (для оправки информации о купленных товарах)
 
 *PROVIDER_TOKEN*: Токен провайдера платежей
+
+*WEBHOOCK_NGROK*: ngrok proxy тунель
 
 Сборка:
 ```bash

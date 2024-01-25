@@ -106,8 +106,6 @@ async def handle_edit_project(
         message_id=callback_query.message.message_id,
     )
 
-    sleep(2)
-
     await handle_send_project(callback_query, url, index, category)
 
 

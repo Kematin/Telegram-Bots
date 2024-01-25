@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  admin_panel:
+    build: .
+    image: admin_panel:latest
+    ports:
+      - "8080:8080"
