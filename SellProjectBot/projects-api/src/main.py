@@ -1,13 +1,12 @@
 from contextlib import asynccontextmanager
 
 import uvicorn
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from loguru import logger
-
 from admin.admin import admin_router
 from bot.bot import bot_router
 from database import init_models
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from loguru import logger
 
 
 def create_logger() -> None:
@@ -32,7 +31,7 @@ app = FastAPI(lifespan=lifespan)
 app.include_router(admin_router, prefix="/admin")
 app.include_router(bot_router, prefix="/bot")
 
-origins = ["http://localhost:8080", "http://localhost:3939"]
+origins = ["http://localhost:8787", "http://localhost:3939"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
