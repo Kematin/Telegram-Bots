@@ -5,12 +5,26 @@ services:
     build: ./projects-api/
     image: project_api:latest
     ports:
-      - "9999"
-    env_file:
-      - .env.prod
+      - "9999:9999"
+    environment:
+      - ADMIN_USERNAME="admin"
+      - ADMIN_PASSWORD=""
+      - JWT_SECRET_KEY=""
+      - DATABASE_URL=""
+      - BOT_SECRET_KEY=""
 
   admin_panel:
     build: ./admin-client/
     image: admin_panel:latest
     ports:
       - "8787:8787"
+
+  bot:
+    build: ./sell-projects-bot/
+    image: project_bot:latest
+    environment:
+      - BOT_TOKEN=""
+      - SECRET_KEY=""
+      - ADMIN_IP=111111
+      - PROVIDER_TOKEN=""
+      - WEBHOOCK_NGROK=""

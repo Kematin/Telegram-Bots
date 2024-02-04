@@ -31,7 +31,7 @@ function changeCurrency(project) {
 export async function getProjects() {
   const token = await getToken();
   const headers = { Authorization: `Bearer ${token}` };
-  const url = "http://localhost:9999/admin/projects";
+  const url = "http://kematin.space:9999/admin/projects";
   const response = await fetch(url, {
     headers: headers,
   });
@@ -48,7 +48,7 @@ export async function getProjects() {
 export async function getProjectsCategory(category) {
   const token = await getToken();
   const headers = { Authorization: `Bearer ${token}` };
-  const url = `http://localhost:9999/admin/projects?category=${category}`;
+  const url = `http://kematin.space:9999/admin/projects?category=${category}`;
   const response = await fetch(url, {
     headers: headers,
   });
@@ -65,7 +65,7 @@ export async function getProjectsCategory(category) {
 export async function getProject(project_id) {
   const token = await getToken();
   const headers = { Authorization: `Bearer ${token}` };
-  const url = `http://localhost:9999/admin/project/${project_id}`;
+  const url = `http://kematin.space:9999/admin/project/${project_id}`;
   const response = await fetch(url, {
     headers: headers,
   });
@@ -81,7 +81,7 @@ export function getFile(fileName, type, typeResponse, projectId) {
   let headers = { Authorization: "" };
   getToken().then((token) => {
     headers.Authorization = `Bearer ${token}`;
-    fetch(`http://localhost:9999/admin/files/${projectId}?type=${type}`, {
+    fetch(`http://kematin.space:9999/admin/files/${projectId}?type=${type}`, {
       headers: headers,
     }).then((response) => {
       response.arrayBuffer().then((buffer) => {

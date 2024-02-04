@@ -3,19 +3,18 @@ from dataclasses import dataclass
 from typing import Any, List
 
 import aiohttp
+import descriptions
+import keyboards
 from aiogram import Router
 from aiogram.enums.parse_mode import ParseMode
 from aiogram.types import CallbackQuery
 from aiogram.types.input_file import BufferedInputFile, FSInputFile
-
-import descriptions
-import keyboards
 from config import config
 from create_bot import bot
 
 project_router = Router()
 html = ParseMode.HTML
-REQUEST_URL = "http://localhost:9999/bot/"
+REQUEST_URL = "http://kematin.space:9999/bot/"
 PROJECT_INDEX_ALL = {}
 PROJECT_INDEX_FULL11 = {}
 PROJECT_INDEX_FULL9 = {}

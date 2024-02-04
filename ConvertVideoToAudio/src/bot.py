@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 # Custom exc
 from exceptions import DownloadError
 from service import ConvertUserVideo, YoutubeDownload
-from telethon import TelegramClient, events, sync
+from telethon import TelegramClient, events
 
 load_dotenv()
 

@@ -19,7 +19,7 @@ from create_bot import bot
 
 buy_project_router = Router()
 html = ParseMode.HTML
-REQUEST_URL = "http://localhost:9999/bot/"
+REQUEST_URL = "http://kematin.space:9999/bot/"
 
 
 @dataclass
@@ -58,7 +58,7 @@ async def request_file(project_id: str, type: str) -> bytes:
 
 
 async def block_project(project_id: str):
-    url = f"http://localhost:9999/bot/project/{project_id}?is_blocked=true"
+    url = f"http://kematin.space:9999/bot/project/{project_id}?is_blocked=true"
     headers = {"Authorization": f"Bearer {config.SECRET_KEY}"}
 
     async with aiohttp.ClientSession() as session:
@@ -129,8 +129,14 @@ async def pre_checkout(query: PreCheckoutQuery):
 
 @buy_project_router.message(F.successful_payment)
 async def successful_payment(message: Message):
-    pmnt = message.successful_payment
-    project_id = str(pmnt.invoice_payload)
-    project_data = await request_json(REQUEST_URL + f"projects/{project_id}")
-    project = Project(**project_data["project"])
-    await handle_buy_project(message, project)
+    try:
+        pmnt = message.successful_payment
+        project_id = str(pmnt.invoice_payload)
+        project_data = await request_json(REQUEST_URL + f"projects/{project_id}")
+        project = Project(**project_data["project"])
+        await handle_buy_project(message, project)
+    except Exception as e:
+        await bot.send_message(
+            config.ADMIN_IP,
+            descriptions.get_error_message(message.from_user.username, e),
+        )

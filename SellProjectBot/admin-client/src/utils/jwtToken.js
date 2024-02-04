@@ -20,7 +20,7 @@ async function loginByCookies() {
 
 export async function loginByUser(username, password) {
   try {
-    const response = await fetch(`http://127.0.0.1:9999/admin/auth`, {
+    const response = await fetch(`http://kematin.space:9999/admin/auth`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export async function getToken() {
   let token = cookies.get("token");
   if (token) {
     const response = await fetch(
-      `http://127.0.0.1:9999/admin/check_token?token=${token}`,
+      `http://kematin.space:9999/admin/check_token?token=${token}`,
       {}
     );
 

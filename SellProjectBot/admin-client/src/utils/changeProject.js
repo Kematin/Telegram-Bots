@@ -9,7 +9,7 @@ export function changeProject(data, projectId) {
     headers.Authorization = `Bearer ${token}`;
     try {
       const response = fetch(
-        `http://localhost:9999/admin/project/${projectId}`,
+        `http://kematin.space:9999/admin/project/${projectId}`,
         {
           method: "PUT",
           headers: headers,
@@ -33,7 +33,7 @@ export async function changeFiles(projectId, files) {
     Authorization: `Bearer ${token}`,
   };
 
-  const apiUrl = `http://localhost:9999/admin/files/${projectId}`;
+  const apiUrl = `http://kematin.space:9999/admin/files/${projectId}`;
   const data = new FormData();
 
   if (files.doc_file && files.doc_file !== "HAVE") {

@@ -7,7 +7,7 @@ export function addProject(data) {
   };
   const response = getToken().then((token) => {
     headers.Authorization = `Bearer ${token}`;
-    const apiUrl = "http://localhost:9999/admin/project";
+    const apiUrl = "http://kematin.space:9999/admin/project";
     const response = fetch(apiUrl, {
       method: "POST",
       headers: headers,
@@ -24,7 +24,7 @@ export function addFiles(projectId, files) {
   };
   const response = getToken().then((token) => {
     headers.Authorization = `Bearer ${token}`;
-    const apiUrl = `http://localhost:9999/admin/files/${projectId}`;
+    const apiUrl = `http://kematin.space:9999/admin/files/${projectId}`;
     const data = new FormData();
 
     data.append("doc_file", files.doc_file);

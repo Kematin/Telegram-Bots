@@ -103,3 +103,8 @@ def get_project_description_for_admin(
         + f"\n\nБыл куплен:\n{buy_time}"
         + f"\n\nПокупатель:\n{buyer}"
     )
+
+
+def get_error_message(buyer: str, e: Exception) -> str:
+    desc = "ОШИБКА ПРИ ПОКУПКЕ ТОВАРА" + f"\n\nBUYER USER: {buyer}" + f"ERROR: {e}"
+    return desc

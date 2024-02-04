@@ -12,7 +12,7 @@ function Logs() {
   const getLogs = () => {
     getToken().then((token) => {
       const headers = { Authorization: `Bearer ${token}` };
-      fetch("http://localhost:9999/admin/logs", { headers: headers })
+      fetch("http://kematin.space:9999/admin/logs", { headers: headers })
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);

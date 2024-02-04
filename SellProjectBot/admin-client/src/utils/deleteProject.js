@@ -5,7 +5,7 @@ export async function deleteProject(project_id) {
     Authorization: `Bearer ${token}`,
     "Content-Type": "application/json",
   };
-  const url = `http://localhost:9999/admin/project/${project_id}`;
+  const url = `http://kematin.space:9999/admin/project/${project_id}`;
   try {
     const response = await fetch(url, {
       method: "DELETE",
