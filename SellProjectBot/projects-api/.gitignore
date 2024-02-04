@@ -1,5 +1,5 @@
 __pycache__
-database/store.db
+src/database/store.db
 projects/*
 !/projects/init.prod
 logs/*.log

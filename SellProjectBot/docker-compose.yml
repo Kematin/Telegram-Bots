@@ -6,12 +6,8 @@ services:
     image: project_api:latest
     ports:
       - "9999:9999"
-    environment:
-      - ADMIN_USERNAME="admin"
-      - ADMIN_PASSWORD=""
-      - JWT_SECRET_KEY=""
-      - DATABASE_URL=""
-      - BOT_SECRET_KEY=""
+    env_file:
+      .env
 
   admin_panel:
     build: ./admin-client/
@@ -22,9 +18,5 @@ services:
   bot:
     build: ./sell-projects-bot/
     image: project_bot:latest
-    environment:
-      - BOT_TOKEN=""
-      - SECRET_KEY=""
-      - ADMIN_IP=111111
-      - PROVIDER_TOKEN=""
-      - WEBHOOCK_NGROK=""
+    env_file:
+      .env
