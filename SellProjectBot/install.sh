@@ -12,6 +12,6 @@ cd ..
 cd sell-projects-bot
 docker build -t project_bot .
 
-# up images
+# up container images
 cd ..
 docker-compose up -d
