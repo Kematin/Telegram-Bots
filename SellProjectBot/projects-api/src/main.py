@@ -31,7 +31,7 @@ app = FastAPI(lifespan=lifespan)
 app.include_router(admin_router, prefix="/admin")
 app.include_router(bot_router, prefix="/bot")
 
-origins = ["http://localhost:8787", "http://localhost:3939"]
+origins = ["http://kematin.space:8787"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
